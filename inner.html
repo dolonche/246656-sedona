@@ -11,70 +11,81 @@
     <header class="main-header">
         <nav>
             <ul>
-                <li><a href="#">информация</a></li>
-                <li><a href="#">фото и видео</a></li>
-                <li><a href="#">карта штата</a></li>
-                <li><a href="#">гостиницы</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="#">Гостиницы</a></li>
             </ul>
         </nav>
-        <img src="№" alt="логотип" height="70" width="138">
+        <a href="#"><img src="№" alt="логотип" height="70" width="138"></a>
     </header>
     <!--main-header end-->
-    <form action="#">
-        <div class="infrastructure">
-            <span>инфраструктура:</span>
+    <form action="#" method="post">
+            <fieldset>
+            <legend>инфраструктура:</legend>
             <input type="checkbox" name="pool" id="pool" checked>
             <label for="pool">бассейн</label>
             <input type="checkbox" name="parking" id="parking">
             <label for="parking">парковка</label>
             <input type="checkbox" name="wi-fi" id="wi-fi">
             <label for="wi-fi">wi-fi</label>
-        </div>
-        <div class="type-of-housing">
-            <span>тип жилья:</span>
+            </fieldset>
+
+            <fieldset>
+            <legend>тип жилья:</legend>
             <input type="checkbox" name="hotel" id="hotel" checked>
             <label for="hotel">гостиница</label>
             <input type="checkbox" name="motel" id="motel" checked>
             <label for="motel">мотель</label>
             <input type="checkbox" name="apartaments" id="apartaments" checked>
             <label for="apartaments">апартаменты</label>
-        </div>
-        <div class="price">
-            <label for="count">стоимость в сутки (Р):</label>
+            </fieldset>
+            
+        <fieldset>
+            <legend>стоимость в сутки (Р):</legend>
             <input type="range" id="count" name="count" min="1" max="3000" step="100">
-            <input type="submit" value="показать">
-        </div>
+        </fieldset>
+        <button type="submit">показать</button>
     </form>
     <!--sort start-->
     <div class="sort">
         <h2>найдено: 3</h2>
         <span>сортировка:</span>
-        <a href="#">по цене</a>
-        <a href="#">по типу</a>
-        <a href="#">по рейтингу</a>
+        <ul></ul>
+        <li><a href="#">по цене</a></li>
+        <li><a href="#">по типу</a></li>
+        <li><a href="#">по рейтингу</a></li>
+        </ul>
     </div>
     <!--sort end-->
     <!--results start-->
     <div class="results">
-       <div class="results-item-1">
+       <div class="results-item">
        <img src="#" alt="amara resort & spa" height="90" width="135">
+       <h2>amara resort & spa</h2>
        <span>гостиница</span>
        <span>от 3500 р.</span>
        <a href="#">подробнее</a>
        <a href="#">забронировать</a>
-       <div class="raiting-1">рейтинг: 8,5</div>
+       <div class="raiting">рейтинг: 8,5</div>
        </div>
-       <div class="results-item-2">
+       <div class="results-item">
        <img src="#" alt="desert qual inn" height="90" width="135">
+       <h2>desert qual inn</h2>
+       <span>мотель</span>
+       <span>от 2000 р.</span>
        <a href="#">подробнее</a>
        <a href="#">забронировать</a>
-       <div class="raiting-2">рейтинг: 8,9</div>
+       <div class="raiting">рейтинг: 8,9</div>
        </div>
-       <div class="results-item-3">
+       <div class="results-item">
        <img src="#" alt="villas at poco diablo" height="90" width="135">
+       <h2>villas at poco diablo</h2>
+       <span>апартаменты</span>
+       <span>от 4000 р.</span>
        <a href="#">подробнее</a>
        <a href="#">забронировать</a>
-       <div class="raiting-3">рейтинг: 9,2</div>
+       <div class="raiting">рейтинг: 9,2</div>
        </div> 
     </div>
     <!--results end-->
