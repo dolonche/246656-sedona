@@ -36,6 +36,7 @@ body {
     line-height: 21px;
     color: #333333;
     font-weight: normal;
+    width:99%;
 }
 
 h2 {
@@ -49,4 +50,31 @@ h3 {
     font-family: "PTSansBold";
     font-size: 24px;
     color: #000000
+}
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.main-header{
+    box-sizing: border-box;
+}
+nav li{
+    float: left;
+    width: 20%;
+    list-style: none;
+    text-align: center
+}
+nav li a{
+    text-decoration: none;
+}
+nav li:nth-child(3),nav li:last-child{
+    float: right
+}
+header img{
+    position: relative
+}
+.intro img{
+    width: 100%;
+    margin-top: -15px;
 }
