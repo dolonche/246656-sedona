@@ -36,7 +36,6 @@ body {
     line-height: 21px;
     color: #333333;
     font-weight: normal;
-    width:99%;
 }
 
 h2 {
@@ -51,30 +50,129 @@ h3 {
     font-size: 24px;
     color: #000000
 }
-.clearfix::after{
+
+.clearfix:after {
     display: table;
     content: "";
     clear: both;
 }
-.main-header{
-    box-sizing: border-box;
+
+.main-header {
+    margin-top: -15px;
 }
-nav li{
+
+nav li {
     float: left;
     width: 20%;
     list-style: none;
-    text-align: center
+    text-align: center;
+    padding-top: 25px
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
 }
-nav li:nth-child(3),nav li:last-child{
+
+nav li:nth-child(3),
+nav li:last-child {
     float: right
 }
-header img{
-    position: relative
+
+.main-header img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto
 }
-.intro img{
+
+.intro img {
     width: 100%;
-    margin-top: -15px;
+}
+
+.main-page-content .about-sedona {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.main-page-content .features-title {
+    margin-top: 1.4%;
+    text-align: center;
+}
+
+.cause {
+    font-size: 0px;
+}
+
+.desription {
+    display: inline-block;
+    width: 33.3%;
+    height: 256px;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: center
+}
+
+.cause img[src="img/town.jpg"] {
+    display: inline-block;
+    width: 66.3%;
+}
+
+.advantages {
+    font-size: 0;
+}
+
+.advantages-item {
+    display: inline-block;
+    width: 33.3%;
+    font-size: 14px;
+    text-align: center
+}
+
+.cause img[src="img/diablo-most.jpg"] {
+    display: inline-block;
+    width: 66.3%;
+}
+
+.№ {
+    font-size: 14px;
+    display: inline-block;
+    width: 33.3%;
+    text-align: center
+}
+
+.pre-form-message {
+    text-align: center
+}
+
+.form-title {
+    text-align: center
+}
+
+footer {
+    font-size: 0px
+}
+
+[class^="footer-"] {
+    display: inline-block;
+    width: 33.3%;
+    font-size: 14px;
+    text-align: center
+}
+
+.footer-copyright p {
+    display: inline-block
+}
+form{
+    display: block;
+    text-align: center
+}
+input {
+    display: block;
+    margin: auto
+}
+label{
+    display: inline-block;
 }
