@@ -66,7 +66,7 @@ nav li {
     width: 20%;
     list-style: none;
     text-align: center;
-    padding-top: 25px
+    padding-top: 25px;
 }
 
 nav li a {
@@ -109,7 +109,7 @@ nav li:last-child {
 .desription {
     display: inline-block;
     width: 33.3%;
-    height: 256px;
+    min-height: 256px;
     vertical-align: top;
     font-size: 14px;
     text-align: center
@@ -118,6 +118,7 @@ nav li:last-child {
 .cause img[src="img/town.jpg"] {
     display: inline-block;
     width: 66.3%;
+    vertical-align: top
 }
 
 .advantages {
@@ -128,19 +129,22 @@ nav li:last-child {
     display: inline-block;
     width: 33.3%;
     font-size: 14px;
-    text-align: center
+    text-align: center;
+    vertical-align: top
 }
 
 .cause img[src="img/diablo-most.jpg"] {
     display: inline-block;
     width: 66.3%;
+    vertical-align: top
 }
 
 .№ {
     font-size: 14px;
     display: inline-block;
     width: 33.3%;
-    text-align: center
+    text-align: center;
+    vertical-align: top
 }
 
 .pre-form-message {
@@ -159,20 +163,24 @@ footer {
     display: inline-block;
     width: 33.3%;
     font-size: 14px;
-    text-align: center
+    text-align: center;
+    vertical-align: middle
 }
 
 .footer-copyright p {
     display: inline-block
 }
-form{
+
+form {
     display: block;
     text-align: center
 }
+
 input {
     display: block;
     margin: auto
 }
-label{
+
+label {
     display: inline-block;
 }
