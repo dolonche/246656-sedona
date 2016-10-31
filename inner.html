@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="css/inner-style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!--main-header start-->
     <header class="main-header">
         <nav>
-            <ul>
+            <ul class="clearfix">
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
                 <li><a href="#">Карта штата</a></li>
@@ -21,7 +22,7 @@
         <a href="#"><img src="img/logo-sedona.png" alt="логотип" height="70" width="138"></a>
     </header>
     <!--main-header end-->
-    <form action="#" method="post">
+    <form action="#" method="post" class="main-form">
             <fieldset>
             <legend>инфраструктура:</legend>
             <input type="checkbox" name="pool" id="pool" checked>
@@ -52,7 +53,7 @@
     <div class="sort">
         <h2>найдено: 3</h2>
         <span>сортировка:</span>
-        <ul></ul>
+        <ul>
         <li><a href="#">по цене</a></li>
         <li><a href="#">по типу</a></li>
         <li><a href="#">по рейтингу</a></li>
