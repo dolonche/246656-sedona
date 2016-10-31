@@ -36,12 +36,14 @@ body {
     line-height: 21px;
     color: #333333;
     font-weight: normal;
+    background-color: #F0F0F0;
 }
 
 .wrapper {
     max-width: 1200px;
     min-width: 768px;
-    margin: auto
+    margin: auto;
+    background-color:#FDFDFD 
 }
 
 h2 {
@@ -114,7 +116,11 @@ nav li:nth-child(3) {
     margin-left: auto;
     margin-right: auto;
 }
-
+.about-sedona{
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto
+}
 .main-page-content .about-sedona {
     text-align: center;
     margin-top: 2%;
@@ -127,6 +133,7 @@ nav li:nth-child(3) {
 
 .cause {
     font-size: 0px;
+    height: 256px;
 }
 
 .desription {
@@ -135,7 +142,8 @@ nav li:nth-child(3) {
     min-height: 256px;
     vertical-align: top;
     font-size: 14px;
-    text-align: center
+    text-align: center;
+    background-color: #7FB1D0
 }
 
 .advantages {
@@ -153,15 +161,17 @@ nav li:nth-child(3) {
 .img-wrapper {
     display: inline-block;
     width: 66.666666%;
-    vertical-align: top
+    vertical-align: top;
 }
 
 .№ {
     font-size: 14px;
     display: inline-block;
-    width: 33.3%;
+    width: 33.333333%;
+    height: 256px;
     text-align: center;
-    vertical-align: top
+    vertical-align: top;
+    background-color: #ECECEC
 }
 
 .pre-form-message {
@@ -189,19 +199,20 @@ footer {
 }
 
 form {
-    display: block;
-    text-align: center
-}
-
-input {
-    display: block;
-    margin: auto
-}
-
-label {
     display: inline-block;
+    width: 568px;
+    margin-left: 27.8%;
 }
-
+label{
+    padding-left: 56px;   
+}
+input{
+   margin-top:29px;
+}
+input[type="submit"]{
+    width: 458px;
+    margin-left: 56px;
+}
 form fieldset {
     display: inline-block;
     width: 30%
@@ -211,16 +222,37 @@ form fieldset:last-of-type {
     vertical-align: top
 }
 
-.sort {
-    display: flex;
+.sort {}
+
+.sort h2 {
+    display: inline-block;
+    margin-left: 72px;
 }
 
 .sort li {
     list-style: none;
-    display: flex;
+    display: inline-block;
+}
+
+.sort li a {
+    margin-left: 33px;
+}
+
+.sort li a:first-child {
+    margin-left: 40px;
+}
+
+.sort span {
+    margin-left: 49px;
 }
 
 .sort ul {
-    display: flex;
-    flex-direction: row
+    display: inline-block;
+}
+.results-item{
+padding: 30px 72px
+}
+.results-item h2{
+    display: inline-block;
+    vertical-align:top
 }
