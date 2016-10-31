@@ -37,13 +37,14 @@ body {
     color: #333333;
     font-weight: normal;
     background-color: #F0F0F0;
+    text-transform: uppercase
 }
 
 .wrapper {
     max-width: 1200px;
     min-width: 768px;
     margin: auto;
-    background-color:#FDFDFD 
+    background-color: #FDFDFD
 }
 
 h2 {
@@ -65,6 +66,10 @@ h3 {
     clear: both;
 }
 
+header {
+    position: relative;
+}
+
 ul {
     margin: 0;
     padding: 0
@@ -75,7 +80,9 @@ nav li {
     width: 20%;
     list-style: none;
     text-align: center;
-    padding-top: 25px;
+    padding: 18px 0;
+    color: black;
+    font-weight: bolder;
 }
 
 nav li a {
@@ -116,24 +123,28 @@ nav li:nth-child(3) {
     margin-left: auto;
     margin-right: auto;
 }
-.about-sedona{
-    width: 440px;
+
+.about-sedona {
+    width: 495px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
+
 .main-page-content .about-sedona {
     text-align: center;
-    margin-top: 2%;
+    margin-top: 61px;
 }
 
 .main-page-content .features-title {
-    margin-top: 1.4%;
+    margin-top: 38px;
     text-align: center;
 }
 
 .cause {
+    margin-top: 56px;
     font-size: 0px;
     height: 256px;
+    background-color: #7FB1D0
 }
 
 .desription {
@@ -144,6 +155,21 @@ nav li:nth-child(3) {
     font-size: 14px;
     text-align: center;
     background-color: #7FB1D0
+}
+
+.arround-picture {
+    width: 281px;
+    height: 146px;
+    color: #ffffff;
+    margin: auto
+}
+
+.arround-picture h3 {
+    color: #ffffff;
+    width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 53px;
 }
 
 .advantages {
@@ -164,6 +190,11 @@ nav li:nth-child(3) {
     vertical-align: top;
 }
 
+.img-wrapper img {
+    max-width: 100%;
+    width: auto;
+}
+
 .№ {
     font-size: 14px;
     display: inline-block;
@@ -171,15 +202,36 @@ nav li:nth-child(3) {
     height: 256px;
     text-align: center;
     vertical-align: top;
-    background-color: #ECECEC
+    background-color: #ECECEC;
+    margin-top: 0;
 }
 
 .pre-form-message {
+    width: 434px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.pre-form-message h2 {
     text-align: center
 }
 
+.pre-form-message p {
+    text-align: center;
+}
+
 .form-title {
-    text-align: center
+    text-align: center;
+    width: 568px;
+    height: 86px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #756256
+}
+
+.form-title h3 {
+    color: white;
+    padding-top: 35px
 }
 
 footer {
@@ -198,28 +250,91 @@ footer {
     display: inline-block
 }
 
-form {
-    display: inline-block;
-    width: 568px;
-    margin-left: 27.8%;
-}
-label{
-    padding-left: 56px;   
-}
-input{
-   margin-top:29px;
-}
-input[type="submit"]{
-    width: 458px;
-    margin-left: 56px;
-}
-form fieldset {
-    display: inline-block;
-    width: 30%
+footer img {
+    vertical-align: middle;
 }
 
-form fieldset:last-of-type {
-    vertical-align: top
+form {
+    width: 568px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+form label {
+    width: 110px;
+    float: left;
+    margin-top: 55px;
+    margin-left: 56px;
+    font-weight: bold
+}
+form input {
+    width: 346px;
+    float: right;
+    margin-top: 40px;
+    height: 38px;
+    margin-right: 50px;
+}
+
+.form-col {
+    width: 40%;
+    float: left;
+}
+.form-col:first-child {
+    width: 60%;
+    float: left;
+}
+.number-child, .number-parents {
+    font-size: 0;
+    width: 120px;
+    float: right;
+    margin-right: 50px
+}
+
+.number-child input, .number-parents input {
+    width: 38px;
+    height: 34px;
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    padding: 0;
+    margin-right: 0;
+}
+.number-parents input, .number-parents button{
+    margin-left: -2px
+}
+.number-child button, .number-parents button {
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+}
+
+.form-col:last-child label{
+    margin-left: 0px;
+    width: 50px;
+    
+}
+form [type="submit"]{
+    width: 458px;
+    height: 58px;
+    background-color: #7FB1D0;
+    color:white;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 55px;
+    margin-right: 55px;
+}
+fieldset {
+    display: inline-block
+}
+
+fieldset input {
+    display: inline-block
+}
+
+fieldset label {
+    padding: 0;
 }
 
 .sort {}
@@ -249,10 +364,12 @@ form fieldset:last-of-type {
 .sort ul {
     display: inline-block;
 }
-.results-item{
-padding: 30px 72px
+
+.results-item {
+    padding: 30px 72px
 }
-.results-item h2{
+
+.results-item h2 {
     display: inline-block;
-    vertical-align:top
+    vertical-align: top
 }
