@@ -235,7 +235,8 @@ nav li:nth-child(3) {
 }
 
 footer {
-    font-size: 0px
+    font-size: 0px;
+    height: 120px;
 }
 
 [class^="footer-"] {
@@ -243,7 +244,8 @@ footer {
     width: 33.3%;
     font-size: 14px;
     text-align: center;
-    vertical-align: middle
+    vertical-align: middle;
+    margin-top: 40px
 }
 
 .footer-copyright p {
@@ -267,6 +269,7 @@ form label {
     margin-left: 56px;
     font-weight: bold
 }
+
 form input {
     width: 346px;
     float: right;
@@ -279,18 +282,22 @@ form input {
     width: 40%;
     float: left;
 }
+
 .form-col:first-child {
     width: 60%;
     float: left;
 }
-.number-child, .number-parents {
+
+.number-child,
+.number-parents {
     font-size: 0;
     width: 120px;
     float: right;
     margin-right: 50px
 }
 
-.number-child input, .number-parents input {
+.number-child input,
+.number-parents input {
     width: 38px;
     height: 34px;
     display: inline-block;
@@ -299,10 +306,14 @@ form input {
     padding: 0;
     margin-right: 0;
 }
-.number-parents input, .number-parents button{
+
+.number-parents input,
+.number-parents button {
     margin-left: -2px
 }
-.number-child button, .number-parents button {
+
+.number-child button,
+.number-parents button {
     width: 38px;
     height: 38px;
     display: inline-block;
@@ -310,66 +321,202 @@ form input {
     margin-top: 40px;
 }
 
-.form-col:last-child label{
+.form-col:last-child label {
     margin-left: 0px;
     width: 50px;
-    
 }
-form [type="submit"]{
+
+form [type="submit"] {
     width: 458px;
     height: 58px;
     background-color: #7FB1D0;
-    color:white;
+    color: white;
     font-size: 30px;
     display: inline-block;
     margin-bottom: 55px;
     margin-right: 55px;
 }
-fieldset {
-    display: inline-block
+
+.main-form {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    max-width: 100%;
+    height: 217px;
+    background-image: url(../img/mountains-in-blur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
 }
 
-fieldset input {
-    display: inline-block
-}
-
-fieldset label {
+.main-form input {
+    margin: 0;
     padding: 0;
 }
 
-.sort {}
+.main-form input[type="checkbox"] {
+    width: 26px;
+    height: 22px;
+    float: left;
+    margin: 0;
+    clear: left;
+    margin-top: 20px;
+    margin-left: 20px
+}
+
+legend {
+    color: white;
+    margin-left: 20px;
+    font-weight: bolder
+}
+
+.inner-form {
+    width: 130px;
+}
+
+.main-form label {
+    float: right;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    clear: left;
+    margin-top: -20px;
+    color: white;
+    font-weight: 100
+}
+
+.main-form fieldset {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin: 0;
+    margin-top: 30px;
+    ;
+    padding: 0;
+    border: none
+}
+
+.main-form fieldset:last-of-type {
+    height: 50%;
+    width: 50%;
+}
+
+.main-form fieldset:last-of-type legend {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.main-form input[type="range"] {
+    width: 248px;
+    float: right;
+    clear: right;
+    height: 2px;
+    margin-top: 40px;
+    margin-right: 20%
+}
+
+.main-form button {
+    width: 137px;
+    height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
 
 .sort h2 {
-    display: inline-block;
     margin-left: 72px;
+    margin-top: 35px;
+    float: left;
+    clear: left
+}
+
+.sort {
+    border-bottom: 1px solid #E3E3E3;
+    height: 100px
 }
 
 .sort li {
     list-style: none;
-    display: inline-block;
-}
-
-.sort li a {
+    float: left;
+    height: 30px;
+    margin-top: 40px;
     margin-left: 33px;
 }
 
-.sort li a:first-child {
+.sort li a {
+    margin-top: 0px;
+    float: left;
+    clear: left
+}
+
+.sort li:first-child a {
     margin-left: 40px;
 }
 
 .sort span {
     margin-left: 49px;
-}
-
-.sort ul {
-    display: inline-block;
+    float: left;
+    margin-top: 40px
 }
 
 .results-item {
-    padding: 30px 72px
+    padding: 30px 72px;
+    border-bottom: 1px solid #E3E3E3;
 }
 
-.results-item h2 {
-    display: inline-block;
-    vertical-align: top
+.results-item .image {
+    float: left;
+}
+
+.results-item .raiting {
+    float: right;
+    background-color: #F0F0F0;
+    padding: 5px 10px;
+    margin-top: 55px;
+}
+
+.results-item .inf {
+    margin: 0;
+    padding: 0;
+    margin-left: 160px;
+    height: 100px;
+}
+
+.inf h2 {
+    font-size: 22px;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.inf span {
+   display: inline-block;
+    margin-top: -60px
+}
+
+.inf span {
+    float: left;
+    clear: left
+}
+.inf span:last-of-type{
+    margin-left: 100px
+}
+.inf a {
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-top: -35px;
+    text-decoration: none;
+    background-color: #7FB1D0;
+    color: white;
+    padding: 5px;
+    font-weight: bold
+}
+.inf a:last-of-type{
+    margin-left: 100px;
+    background-color: #756256
+}
+.inf a:first-of-type {
+    float: left;
+    clear: left
 }
