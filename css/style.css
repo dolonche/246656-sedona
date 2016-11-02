@@ -81,12 +81,12 @@ nav li {
     list-style: none;
     text-align: center;
     padding: 18px 0;
-    color: black;
-    font-weight: bolder;
 }
 
 nav li a {
     text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 nav li:nth-child(3) {
@@ -102,7 +102,8 @@ nav li:nth-child(3) {
     left: 0;
     right: 0;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    z-index: 100
 }
 
 .intro {
@@ -175,6 +176,7 @@ nav li:nth-child(3) {
 
 .advantages {
     font-size: 0;
+    height: 250px;
 }
 
 .advantages-item {
@@ -491,7 +493,7 @@ legend {
 }
 
 .inf span {
-   display: inline-block;
+    display: inline-block;
     margin-top: -60px
 }
 
@@ -499,9 +501,11 @@ legend {
     float: left;
     clear: left
 }
-.inf span:last-of-type{
+
+.inf span:last-of-type {
     margin-left: 100px
 }
+
 .inf a {
     float: left;
     padding: 0;
@@ -513,10 +517,12 @@ legend {
     padding: 5px;
     font-weight: bold
 }
-.inf a:last-of-type{
+
+.inf a:last-of-type {
     margin-left: 100px;
     background-color: #756256
 }
+
 .inf a:first-of-type {
     float: left;
     clear: left
