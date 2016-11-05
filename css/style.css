@@ -112,7 +112,7 @@ nav li:nth-child(3) {
     height: 512px;
     position: relative;
     width: 100%;
-    background-image: url(/img/mountains.jpg);
+    background-image: url(../img/mountains.jpg);
     background-size: contain;
     background-size: 1200px 512px;
     background-repeat: no-repeat;
@@ -125,7 +125,7 @@ nav li:nth-child(3) {
     width: 100%;
     min-width: 768px;
     height: 57px;
-    background-image: url(/img/tooth.png);
+    background-image: url(../img/tooth.png);
     background-position: bottom;
     background-color: transparent;
     background-size: contain;
@@ -164,11 +164,13 @@ nav li:nth-child(3) {
     text-align: center;
     line-height: 26px;
 }
-.about-sedona-wrapper{
+
+.about-sedona-wrapper {
     height: 155px;
     margin-top: -20px;
     background-color: white;
 }
+
 .cause {
     margin-top: 56px;
     font-size: 0px;
@@ -187,26 +189,25 @@ nav li:nth-child(3) {
 }
 
 .arround-picture {
-    width: 281px;
+    width: 303px;
     color: #ffffff;
     margin: auto
 }
 
 .arround-picture h3 {
     color: #ffffff;
-    width: 175px;
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 53px;
     font-size: 21px;
-    font-family: "PTSansRegular"
+    font-family: "PTSansRegular",sans-serif
 }
 
 .advantages {
     font-size: 0;
     height: 250px;
 }
-
 
 .advantages-item {
     display: inline-block;
@@ -217,42 +218,44 @@ nav li:nth-child(3) {
     position: relative;
     margin-top: 164px;
 }
-.advantages-item:first-of-type::before{
-    content:"";
+
+.advantages-item:first-of-type::before {
+    content: "";
     position: absolute;
-    background-image: url(/img/house.png);
+    background-image: url(../img/house.png);
     width: 75px;
     height: 72px;
     bottom: 125px;
     right: 50%;
     margin-right: -37px;
 }
-.inner-wrapper{
+
+.inner-wrapper {
     width: 252px;
     margin-left: auto;
     margin-right: auto;
 }
-.advantages-item:nth-of-type(2)::before{
-    content:"";
+
+.advantages-item:nth-of-type(2)::before {
+    content: "";
     position: absolute;
-    background-image: url(/img/hamburger.png);
+    background-image: url(../img/hamburger.png);
     width: 74px;
     height: 70px;
     bottom: 125px;
     right: 50%;
     margin-right: -37px;
 }
-.advantages-item:last-of-type::before{
-    content:"";
+
+.advantages-item:last-of-type::before {
+    content: "";
     position: absolute;
-    background-image: url(/img/present.png);
+    background-image: url(../img/present.png);
     width: 64px;
     height: 76px;
-    bottom: 105px;
+    bottom: 125px;
     right: 50%;
     margin-right: -32px;
-    
-    
 }
 
 .advantages-item b {
@@ -281,6 +284,22 @@ nav li:nth-child(3) {
     vertical-align: top;
     background-color: #ECECEC;
     margin-top: 0;
+}
+
+.inner-cause-wrapper {
+    width: 260px;
+    height: 142px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner-cause-wrapper h3 {
+    font-family: "PtSansBold", sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 21px;
+    line-height: 21px;
+    width: 145px;
 }
 
 .pre-form-message {
@@ -368,7 +387,7 @@ form input {
 .number-child,
 .number-parents {
     font-size: 0;
-    width: 120px;
+    width: 118px;
     float: right;
     margin-right: 50px
 }
@@ -412,6 +431,7 @@ form [type="submit"] {
     display: inline-block;
     margin-bottom: 55px;
     margin-right: 55px;
+    border: none
 }
 
 .main-form {
