@@ -23,15 +23,14 @@
 /* font-family: "PTSansBold"; */
 
 @font-face {
-    font-family: "PTSansBold";
-    src: url("../fonts/PTSansBold/PTSansBold.eot");
+    c src: url("../fonts/PTSansBold/PTSansBold.eot");
     src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix")format("embedded-opentype"), url("../fonts/PTSansBold/PTSansBold.woff") format("woff"), url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 body {
-    font-family: "PTSansRegular";
+    font-family: "PTSansRegular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: #333333;
@@ -48,15 +47,16 @@ body {
 }
 
 h2 {
-    font-family: "PTSansBold";
+    font-family: "PTSansBold", sans-serif;
     font-size: 30px;
     line-height: 24px;
     font-weight: normal;
 }
 
 h3 {
-    font-family: "PTSansBold";
-    font-size: 24px;
+    font-family: "PTSansBold", sans-serif;
+    font-size: 21px;
+    line-height: 26px;
     color: #000000
 }
 
@@ -87,6 +87,8 @@ nav li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    line-height: 26px;
+    font-family: "PTSansBold", sans-serif;
 }
 
 nav li:nth-child(3) {
@@ -108,12 +110,30 @@ nav li:nth-child(3) {
 
 .intro {
     height: 512px;
+    position: relative;
     width: 100%;
-    background: url(../img/mountains.jpg);
+    background-image: url(/img/mountains.jpg);
     background-size: contain;
     background-size: 1200px 512px;
     background-repeat: no-repeat;
-    position: relative
+    position: relative;
+}
+
+.intro::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-width: 768px;
+    height: 57px;
+    background-image: url(/img/tooth.png);
+    background-position: bottom;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    top: 100%;
+    margin-top: -57px;
+    z-index: 400;
 }
 
 .intro img {
@@ -134,14 +154,21 @@ nav li:nth-child(3) {
 
 .main-page-content .about-sedona {
     text-align: center;
-    margin-top: 61px;
+    padding-top: 61px;
+    font-size: 21px;
+    font-family: "PTSansRegular", sans-serif;
+    width: 440px;
 }
 
 .main-page-content .features-title {
-    margin-top: 38px;
     text-align: center;
+    line-height: 26px;
 }
-
+.about-sedona-wrapper{
+    height: 155px;
+    margin-top: -20px;
+    background-color: white;
+}
 .cause {
     margin-top: 56px;
     font-size: 0px;
@@ -161,7 +188,6 @@ nav li:nth-child(3) {
 
 .arround-picture {
     width: 281px;
-    height: 146px;
     color: #ffffff;
     margin: auto
 }
@@ -172,6 +198,8 @@ nav li:nth-child(3) {
     margin-left: auto;
     margin-right: auto;
     margin-top: 53px;
+    font-size: 21px;
+    font-family: "PTSansRegular"
 }
 
 .advantages {
@@ -179,12 +207,58 @@ nav li:nth-child(3) {
     height: 250px;
 }
 
+
 .advantages-item {
     display: inline-block;
     width: 33.333333%;
     font-size: 14px;
     text-align: center;
-    vertical-align: top
+    vertical-align: top;
+    position: relative;
+    margin-top: 164px;
+}
+.advantages-item:first-of-type::before{
+    content:"";
+    position: absolute;
+    background-image: url(/img/house.png);
+    width: 75px;
+    height: 72px;
+    bottom: 125px;
+    right: 50%;
+    margin-right: -37px;
+}
+.inner-wrapper{
+    width: 252px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.advantages-item:nth-of-type(2)::before{
+    content:"";
+    position: absolute;
+    background-image: url(/img/hamburger.png);
+    width: 74px;
+    height: 70px;
+    bottom: 125px;
+    right: 50%;
+    margin-right: -37px;
+}
+.advantages-item:last-of-type::before{
+    content:"";
+    position: absolute;
+    background-image: url(/img/present.png);
+    width: 64px;
+    height: 76px;
+    bottom: 105px;
+    right: 50%;
+    margin-right: -32px;
+    
+    
+}
+
+.advantages-item b {
+    font-family: "PTSansBold", sans-serif;
+    font-size: 21px;
+    letter-spacing: 100%
 }
 
 .img-wrapper {
