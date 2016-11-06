@@ -135,12 +135,15 @@ nav li:nth-child(3) {
     margin-top: -57px;
     z-index: 400;
 }
-nav li a:hover{
+
+nav li a:hover {
     color: #81B3D2;
 }
-nav li a:active{
+
+nav li a:active {
     color: #B2B2B2;
 }
+
 .intro img {
     position: absolute;
     top: 70px;
@@ -157,9 +160,9 @@ nav li a:active{
     margin-right: auto;
     line-height: 21px;
 }
-.about-sedona-wrapper h3{
-    
-}
+
+.about-sedona-wrapper h3 {}
+
 .main-page-content .about-sedona {
     text-align: center;
     padding-top: 61px;
@@ -209,7 +212,7 @@ nav li a:active{
     margin-right: auto;
     margin-top: 53px;
     font-size: 21px;
-    font-family: "PTSansRegular",sans-serif
+    font-family: "PTSansRegular", sans-serif
 }
 
 .advantages {
@@ -351,13 +354,15 @@ footer {
     vertical-align: middle;
     margin-top: 40px
 }
-.footer-social a{
+
+.footer-social a {
     font-size: 0;
     display: inline-block;
     width: 46px;
     height: 48px;
-    background-color:#81B3D2 
+    background-color: #81B3D2
 }
+
 .footer-copyright p {
     display: inline-block
 }
@@ -369,7 +374,8 @@ footer img {
 form {
     width: 568px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    box-shadow: 0px 5px 5px 5px #E2E2E2
 }
 
 form label {
@@ -386,8 +392,14 @@ form input {
     margin-top: 40px;
     height: 38px;
     margin-right: 50px;
+    background-color: #F2F2F2 
 }
-
+form input:hover{
+    background-color: #EBEBEB;
+}
+form input:active{
+    background-color: white;
+}
 .form-col {
     width: 40%;
     float: left;
@@ -447,13 +459,16 @@ form [type="submit"] {
     margin-right: 55px;
     border: none
 }
-form [type="submit"]:hover{
-    background-color:#669EC0;
+
+form [type="submit"]:hover {
+    background-color: #669EC0;
 }
-form [type="submit"]:active{
+
+form [type="submit"]:active {
     background-color: #5496BD;
-    color:#7EB0CD
+    color: #7EB0CD
 }
+
 .main-form {
     margin: 0;
     padding: 0;
