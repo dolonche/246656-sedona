@@ -1,36 +1,5 @@
-/* font-family: "PTSansRegular"; */
-
-@font-face {
-    font-family: "PTSansRegular";
-    src: url("../fonts/PTSansRegular/PTSansRegular.eot");
-    src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"), url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-
-/* font-family: "PTSansItalic"; */
-
-@font-face {
-    font-family: "PTSansItalic";
-    src: url("../fonts/PTSansItalic/PTSansItalic.eot");
-    src: url("../fonts/PTSansItalic/PTSansItalic.eot?#iefix")format("embedded-opentype"), url("../fonts/PTSansItalic/PTSansItalic.woff") format("woff"), url("../fonts/PTSansItalic/PTSansItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-
-/* font-family: "PTSansBold"; */
-
-@font-face {
-    c src: url("../fonts/PTSansBold/PTSansBold.eot");
-    src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix")format("embedded-opentype"), url("../fonts/PTSansBold/PTSansBold.woff") format("woff"), url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
 body {
-    font-family: "PTSansRegular", "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: #333333;
@@ -43,18 +12,20 @@ body {
     max-width: 1200px;
     min-width: 768px;
     margin: auto;
-    background-color: #FDFDFD
+    background-color: #FDFDFD;
+    box-shadow: 0px 5px 5px 5px #E2E2E2;
 }
 
 h2 {
-    font-family: "PTSansBold", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 24px;
     font-weight: normal;
 }
 
 h3 {
-    font-family: "PTSansBold", sans-serif;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: #000000
@@ -88,7 +59,6 @@ nav li a {
     color: black;
     font-weight: bold;
     line-height: 26px;
-    font-family: "PTSansBold", sans-serif;
 }
 
 nav li:nth-child(3) {
@@ -154,21 +124,13 @@ nav li a:active {
     margin-right: auto;
 }
 
-.about-sedona {
-    width: 495px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 21px;
-}
-
-.about-sedona-wrapper h3 {}
-
 .main-page-content .about-sedona {
     text-align: center;
     padding-top: 61px;
     font-size: 21px;
-    font-family: "PTSansRegular", sans-serif;
     width: 440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-page-content .features-title {
@@ -177,13 +139,12 @@ nav li a:active {
 }
 
 .about-sedona-wrapper {
-    height: 155px;
+    height: 217px;
     margin-top: -20px;
     background-color: white;
 }
 
 .cause {
-    margin-top: 56px;
     font-size: 0px;
     height: 256px;
     background-color: #7FB1D0
@@ -200,24 +161,23 @@ nav li a:active {
 }
 
 .arround-picture {
-    width: 303px;
+    max-width: 302px;
     color: #ffffff;
     margin: auto
 }
 
 .arround-picture h3 {
     color: #ffffff;
-    width: 150px;
+    width: 155px;
+    line-height: 21px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 53px;
-    font-size: 21px;
-    font-family: "PTSansRegular", sans-serif
 }
 
 .advantages {
     font-size: 0;
-    height: 250px;
+    height: 331px;
 }
 
 .advantages-item {
@@ -242,7 +202,7 @@ nav li a:active {
 }
 
 .inner-wrapper {
-    width: 252px;
+    max-width: 285px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -270,9 +230,9 @@ nav li a:active {
 }
 
 .advantages-item b {
-    font-family: "PTSansBold", sans-serif;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
     font-size: 21px;
-    letter-spacing: 100%
 }
 
 .img-wrapper {
@@ -298,18 +258,17 @@ nav li a:active {
 }
 
 .inner-cause-wrapper {
-    width: 260px;
+    max-width: 265px;
     height: 142px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .inner-cause-wrapper h3 {
-    font-family: "PtSansBold", sans-serif;
     display: inline-block;
     vertical-align: top;
-    font-size: 21px;
     line-height: 21px;
+    margin-top: 50px;
     width: 145px;
 }
 
@@ -320,11 +279,15 @@ nav li a:active {
 }
 
 .pre-form-message h2 {
-    text-align: center
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold
 }
 
 .pre-form-message p {
     text-align: center;
+    width: 399px;
+    line-height: 24px;
 }
 
 .form-title {
@@ -338,7 +301,8 @@ nav li a:active {
 
 .form-title h3 {
     color: white;
-    padding-top: 35px
+    padding-top: 30px;
+    font-style: 21px;
 }
 
 footer {
@@ -354,23 +318,89 @@ footer {
     vertical-align: middle;
     margin-top: 40px
 }
-
-.footer-social a {
+.footer-hashtag{
+    font-size: 21px;
+    font-weight: bold
+}
+.footer-social .social-btn {
     font-size: 0;
     display: inline-block;
+    vertical-align: top;
     width: 46px;
     height: 48px;
-    background-color: #81B3D2
+    background-color: #81B3D2;
+    position: relative;
+    margin-left: 5px;
+}
+
+.footer-social .social-btn:hover {
+    background-color: #669EC0;
+}
+
+.footer-social .social-btn:active {
+    background-color: #5496BD;
+}
+
+.social-btn::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.social-btn:active::before {
+    opacity: 0.3
+}
+
+.social-btn-tw::before {
+    width: 17px;
+    height: 15px;
+    background-position: -250px -83px;
+}
+
+.social-btn-fb::before {
+    width: 10px;
+    height: 19px;
+    background-position: -252px -54px;
+}
+
+.social-btn-yb::before {
+    width: 20px;
+    height: 16px;
+    background-position: -5px -5px;
 }
 
 .footer-copyright p {
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
 }
-
-footer img {
-    vertical-align: middle;
+.footer-copyright a{
+    font-size: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    position: relative;
+    width: 115px;
+    height: 40px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    background-position: -4px -69px;
+    transform: translate(-50%, -50%);
+    top: 0%;
+    left: 60px;
 }
-
+.footer-copyright a:hover{
+    background-position: -160px -5px;
+    
+}
+.footer-copyright a:active{
+    background-position: -127px -54px;
+    
+}
 form {
     width: 568px;
     margin-left: auto;
@@ -379,7 +409,7 @@ form {
 }
 
 form label {
-    width: 110px;
+    width: 95px;
     float: left;
     margin-top: 55px;
     margin-left: 56px;
@@ -391,22 +421,29 @@ form input {
     float: right;
     margin-top: 40px;
     height: 38px;
-    margin-right: 50px;
-    background-color: #F2F2F2 
+    margin-right: 60px;
+    background-color: #F2F2F2
 }
-form input:hover{
+
+form input:hover {
     background-color: #EBEBEB;
 }
-form input:active{
+
+form input:active {
     background-color: white;
 }
+
+form input:focus {
+    background-color: white;
+}
+
 .form-col {
-    width: 40%;
+    width: 50%;
     float: left;
 }
 
 .form-col:first-child {
-    width: 60%;
+    width: 50%;
     float: left;
 }
 
@@ -415,7 +452,11 @@ form input:active{
     font-size: 0;
     width: 118px;
     float: right;
-    margin-right: 50px
+    margin-right: 60px
+}
+
+.number-parents {
+    margin-right: 5px
 }
 
 .number-child input,
@@ -444,8 +485,12 @@ form input:active{
 }
 
 .form-col:last-child label {
-    margin-left: 0px;
-    width: 50px;
+    margin-left: 51px;
+    width: 40px;
+}
+
+.form-col label {
+    margin-top: 50px;
 }
 
 form [type="submit"] {
@@ -453,7 +498,7 @@ form [type="submit"] {
     height: 58px;
     background-color: #7FB1D0;
     color: white;
-    font-size: 30px;
+    font-size: 27px;
     display: inline-block;
     margin-bottom: 55px;
     margin-right: 55px;
@@ -493,7 +538,8 @@ form [type="submit"]:active {
     margin: 0;
     clear: left;
     margin-top: 20px;
-    margin-left: 20px
+    margin-left: 20px;
+    border: 3px solid black 
 }
 
 legend {
