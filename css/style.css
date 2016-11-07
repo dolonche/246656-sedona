@@ -275,7 +275,8 @@ nav li a:active {
 .pre-form-message {
     width: 434px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin-top: -10px;
 }
 
 .pre-form-message h2 {
@@ -296,7 +297,8 @@ nav li a:active {
     height: 86px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #756256
+    background-color: #756256;
+    margin-top: 50px;
 }
 
 .form-title h3 {
@@ -318,10 +320,12 @@ footer {
     vertical-align: middle;
     margin-top: 40px
 }
-.footer-hashtag{
+
+.footer-hashtag {
     font-size: 21px;
     font-weight: bold
 }
+
 .footer-social .social-btn {
     font-size: 0;
     display: inline-block;
@@ -378,7 +382,8 @@ footer {
     vertical-align: top;
     margin-top: 30px;
 }
-.footer-copyright a{
+
+.footer-copyright a {
     font-size: 0;
     display: inline-block;
     vertical-align: top;
@@ -393,14 +398,15 @@ footer {
     top: 0%;
     left: 60px;
 }
-.footer-copyright a:hover{
+
+.footer-copyright a:hover {
     background-position: -160px -5px;
-    
 }
-.footer-copyright a:active{
+
+.footer-copyright a:active {
     background-position: -127px -54px;
-    
 }
+
 form {
     width: 568px;
     margin-left: auto;
@@ -408,10 +414,14 @@ form {
     box-shadow: 0px 5px 5px 5px #E2E2E2
 }
 
+form .form-row:first-of-type label {
+    margin-top: 50px;
+}
+
 form label {
     width: 95px;
     float: left;
-    margin-top: 55px;
+    margin-top: 61px;
     margin-left: 56px;
     font-weight: bold
 }
@@ -422,7 +432,8 @@ form input {
     margin-top: 40px;
     height: 38px;
     margin-right: 60px;
-    background-color: #F2F2F2
+    background-color: #F2F2F2;
+    border:none
 }
 
 form input:hover {
@@ -477,8 +488,9 @@ form input:focus {
 
 .number-child button,
 .number-parents button {
+    border: none;
     width: 38px;
-    height: 38px;
+    height: 34px;
     display: inline-block;
     vertical-align: top;
     margin-top: 40px;
@@ -523,28 +535,56 @@ form [type="submit"]:active {
     background-image: url(../img/mountains-in-blur.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center
-}
-
-.main-form input {
-    margin: 0;
-    padding: 0;
+    background-position: center;
+    box-shadow: none
 }
 
 .main-form input[type="checkbox"] {
-    width: 26px;
+    display: none;
+}
+
+.main-form input[type="checkbox"] + label {
+    display: block;
+    margin: 10px 0;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    padding-left: 40px;
+    margin-left: 52px;
+}
+
+.main-form input[type="checkbox"] + label:first-of-type {
+    margin-top: 25px;
+}
+
+.main-form input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    width: 24px;
     height: 22px;
-    float: left;
-    margin: 0;
-    clear: left;
-    margin-top: 20px;
-    margin-left: 20px;
-    border: 3px solid black 
+    background-image: url(../img/spritesheet.png);
+    background-position: -287px -6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-form input[type="checkbox"]:checked + label::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 22px;
+    background-image: url(../img/spritesheet.png);
+    background-position: -323px -7px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 legend {
     color: white;
-    margin-left: 20px;
+    margin-left: 52px;
+    margin-top: 32px;
     font-weight: bolder
 }
 
@@ -553,7 +593,7 @@ legend {
 }
 
 .main-form label {
-    float: right;
+    float: left;
     width: 50px;
     margin: 0;
     padding: 0;
@@ -580,8 +620,7 @@ legend {
 }
 
 .main-form fieldset:last-of-type legend {
-    margin-left: auto;
-    margin-right: auto
+    margin-left: 35%;
 }
 
 .main-form input[type="range"] {
@@ -598,14 +637,25 @@ legend {
     height: 36px;
     margin-left: auto;
     margin-right: auto;
-    display: block
+    display: block;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 17px;
+    font-family: "PT Sans" sans-serif
 }
 
 .sort h2 {
     margin-left: 72px;
     margin-top: 35px;
+    font-weight: bold;
     float: left;
     clear: left
+}
+
+.main-form button:hover {
+    background-color: #ffffff;
+    color: black
 }
 
 .sort {
@@ -650,7 +700,7 @@ legend {
     float: right;
     background-color: #F0F0F0;
     padding: 5px 10px;
-    margin-top: 55px;
+    margin-top: 60px;
 }
 
 .results-item .inf {
@@ -661,15 +711,17 @@ legend {
 }
 
 .inf h2 {
-    font-size: 22px;
+    font-size: 21px;
+    font-weight: bold;
     float: left;
     padding: 0;
     margin: 0;
+    margin-top: -5px;
 }
 
 .inf span {
     display: inline-block;
-    margin-top: -60px
+    margin-top: -70px
 }
 
 .inf span {
@@ -685,20 +737,16 @@ legend {
     float: left;
     padding: 0;
     margin: 0;
-    margin-top: -35px;
+    margin-top: -34px;
     text-decoration: none;
     background-color: #7FB1D0;
     color: white;
-    padding: 5px;
+    padding: 4px 15px;
     font-weight: bold
 }
 
 .inf a:last-of-type {
     margin-left: 100px;
-    background-color: #756256
-}
-
-.inf a:first-of-type {
-    float: left;
-    clear: left
+    background-color: #756256;
+    margin-left: 113px;
 }
