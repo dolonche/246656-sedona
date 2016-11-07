@@ -5,7 +5,7 @@ body {
     color: #333333;
     font-weight: normal;
     background-color: #F0F0F0;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .wrapper {
@@ -14,6 +14,7 @@ body {
     margin: auto;
     background-color: #FDFDFD;
     box-shadow: 0px 5px 5px 5px #E2E2E2;
+    position: relative
 }
 
 h2 {
@@ -411,9 +412,22 @@ form {
     width: 568px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 5px 5px 5px #E2E2E2
+    box-shadow: 0px 5px 5px 5px #E2E2E2;
+    background-color: #fff;
+    position: relative;
+    z-index: 2
+    
 }
-
+iframe{
+    width: 100%;
+    min-width: 768px;
+    max-width: 1200px;
+    height: 474px;
+    position: absolute;
+    z-index: 1;
+    top: 2214px;
+    right: 0px;
+}
 form .form-row:first-of-type label {
     margin-top: 50px;
 }
@@ -525,7 +539,6 @@ form [type="submit"]:active {
     background-color: #5496BD;
     color: #7EB0CD
 }
-
 .main-form {
     margin: 0;
     padding: 0;
@@ -630,6 +643,7 @@ legend {
     width: 50%;
     max-width: 50%;
     min-width: 50%;
+    text-align: center
 }
 
 .main-form fieldset:last-of-type legend {
@@ -638,12 +652,12 @@ legend {
 }
 
 .main-form input[type="range"] {
-    width: 247px;
+    display: inline-block;
+    max-width: 247px;
     height: 2px;
-    margin-top: 40px;
+    margin-top: 40px;   
     margin-right: auto;
-    transform: translateX(-50%)
-    
+    margin-left: auto;
 }
 
 .main-form button {
