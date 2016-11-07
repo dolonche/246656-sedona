@@ -433,7 +433,7 @@ form input {
     height: 38px;
     margin-right: 60px;
     background-color: #F2F2F2;
-    border:none
+    border: none
 }
 
 form input:hover {
@@ -549,8 +549,8 @@ form [type="submit"]:active {
     line-height: 20px;
     position: relative;
     cursor: pointer;
-    padding-left: 40px;
-    margin-left: 52px;
+    margin-left: 50px;
+    padding-left: 45px;
 }
 
 .main-form input[type="checkbox"] + label:first-of-type {
@@ -581,35 +581,46 @@ form [type="submit"]:active {
     left: 0;
 }
 
+.main-form input[type="checkbox"]:checked:disabled + label::after {
+    opacity: 0.7
+}
+
+.main-form input[type="checkbox"]:checked:disabled + label::before {
+    opacity: 0.7
+}
+
 legend {
     color: white;
-    margin-left: 52px;
+    margin-left: 50px;
     margin-top: 32px;
-    font-weight: bolder
+    font-size: 21px;
+    font-weight: bold
 }
 
 .inner-form {
-    width: 130px;
+    width: 200px;
 }
 
 .main-form label {
     float: left;
-    width: 50px;
+    width: 100px;
     margin: 0;
     padding: 0;
     clear: left;
     margin-top: -20px;
+    transform: translateX(0px);
     color: white;
-    font-weight: 100
+    font-weight: normal
 }
 
 .main-form fieldset {
     float: left;
-    width: 25%;
+    text-align:left;
+    max-width: 25%;
+    min-width: 25%;
     height: auto;
     margin: 0;
     margin-top: 30px;
-    ;
     padding: 0;
     border: none
 }
@@ -617,19 +628,22 @@ legend {
 .main-form fieldset:last-of-type {
     height: 50%;
     width: 50%;
+    max-width: 50%;
+    min-width: 50%;
 }
 
 .main-form fieldset:last-of-type legend {
-    margin-left: 35%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-form input[type="range"] {
-    width: 248px;
-    float: right;
-    clear: right;
+    width: 247px;
     height: 2px;
     margin-top: 40px;
-    margin-right: 20%
+    margin-right: auto;
+    transform: translateX(-50%)
+    
 }
 
 .main-form button {
@@ -666,7 +680,7 @@ legend {
 .sort li {
     list-style: none;
     float: left;
-    height: 30px;
+    height: 20px;
     margin-top: 40px;
     margin-left: 33px;
 }
@@ -674,7 +688,20 @@ legend {
 .sort li a {
     margin-top: 0px;
     float: left;
-    clear: left
+    clear: left;
+    text-decoration: none;
+    font-size: 12px;
+    color: #cacaca;
+    border-bottom: 1px dotted #81B3D2
+}
+
+.sort li a:hover {
+    color: #81B3D2;
+}
+
+.sort li a:active {
+    color: black;
+    border: none
 }
 
 .sort li:first-child a {
@@ -684,16 +711,19 @@ legend {
 .sort span {
     margin-left: 49px;
     float: left;
-    margin-top: 40px
+    margin-top: 40px;
+    font-size: 12px;
 }
 
 .results-item {
-    padding: 30px 72px;
+    padding-left: 72px;
     border-bottom: 1px solid #E3E3E3;
+    height: 120px;
 }
 
 .results-item .image {
     float: left;
+    margin-top: 0px;
 }
 
 .results-item .raiting {
@@ -708,20 +738,30 @@ legend {
     padding: 0;
     margin-left: 160px;
     height: 100px;
+    margin-top: 30px;
 }
 
-.inf h2 {
+.inf a h2 {
     font-size: 21px;
     font-weight: bold;
     float: left;
     padding: 0;
     margin: 0;
     margin-top: -5px;
+    padding: 0;
+}
+
+.inf h2:hover {
+    color: #7FB1D0
+}
+
+.inf h2:active {
+    color: #CACACA
 }
 
 .inf span {
     display: inline-block;
-    margin-top: -70px
+    margin-top: -68px
 }
 
 .inf span {
@@ -745,8 +785,33 @@ legend {
     font-weight: bold
 }
 
+.inf a:first-of-type {
+    padding: 0;
+    color: black;
+    background-color: white;
+    margin: 0;
+}
+
 .inf a:last-of-type {
     margin-left: 100px;
     background-color: #756256;
     margin-left: 113px;
+}
+
+.inf a:last-of-type:hover {
+    background-color: #604E43;
+}
+
+.inf a:last-of-type:active {
+    background-color: #503E33;
+    color: rgba(133, 120, 113, 0.7);
+}
+
+.inf a:nth-of-type(2):hover {
+    background-color: #669EC0;
+}
+
+.inf a:nth-of-type(2):active {
+    background-color: #5496BD;
+    color: rgba(136, 182, 209, 0.7)
 }
