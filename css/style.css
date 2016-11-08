@@ -84,8 +84,8 @@ nav li:nth-child(3) {
     position: relative;
     width: 100%;
     background-image: url(../img/mountains.jpg);
-    background-size: contain;
-    background-size: 1200px 512px;
+    background-size: cover;
+    background-position: 0px -100px;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -141,7 +141,7 @@ nav li a:active {
 
 .about-sedona-wrapper {
     height: 217px;
-    margin-top: -20px;
+    margin-top: -30px;
     background-color: white;
 }
 
@@ -169,7 +169,7 @@ nav li a:active {
 
 .arround-picture h3 {
     color: #ffffff;
-    width: 155px;
+    width: 151px;
     line-height: 21px;
     margin-left: auto;
     margin-right: auto;
@@ -277,7 +277,7 @@ nav li a:active {
     width: 434px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -10px;
+    margin-top: -30px;
 }
 
 .pre-form-message h2 {
@@ -324,7 +324,7 @@ footer {
     font-size: 14px;
     text-align: center;
     vertical-align: middle;
-    margin-top: 40px
+    margin-top: 20px
 }
 
 .footer-hashtag {
@@ -413,6 +413,11 @@ footer {
     background-position: -127px -54px;
 }
 
+.main-footer {
+    margin-top: 0;
+    background-color: transparent;
+}
+
 form {
     width: 568px;
     margin-left: auto;
@@ -421,18 +426,19 @@ form {
     background-color: #fff;
     position: relative;
     z-index: 2
-    
 }
-iframe{
+
+iframe {
     width: 100%;
     min-width: 768px;
     max-width: 1200px;
-    height: 584px;
+    height: 582px;
     position: absolute;
     z-index: 1;
-    top: 2214px;
+    top: 2181px;
     right: 0px;
 }
+
 form .form-row:first-of-type label {
     margin-top: 50px;
 }
@@ -446,13 +452,27 @@ form label {
 }
 
 form input {
-    width: 346px;
+    width: 336px;
     float: right;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
     margin-top: 40px;
+    padding-left: 10px;
     height: 38px;
     margin-right: 60px;
     background-color: #F2F2F2;
-    border: none
+    border: none;
+}
+
+input::-webkit-input-placeholder {
+    color: black;
+    font-family: "PT Sans", arial, sans-serif
+}
+
+input::-moz-placeholder {
+    color: black;
+    font-family: "PT Sans", arial, sans-serif
 }
 
 form input:hover {
@@ -479,25 +499,28 @@ form input:focus {
 
 .number-child,
 .number-parents {
-    font-size: 0;
-    width: 118px;
+    font-size: 0px; 
+    width: 120px;
     float: right;
-    margin-right: 60px
+    margin-right: 55px
 }
 
 .number-parents {
-    margin-right: 5px
+    margin-right: 0px
 }
 
 .number-child input,
 .number-parents input {
     width: 38px;
     height: 34px;
+    font-size: 14px;
+    text-align: center;
     display: inline-block;
     vertical-align: top;
     float: none;
     padding: 0;
     margin-right: 0;
+    
 }
 
 .number-parents input,
@@ -510,6 +533,7 @@ form input:focus {
     border: none;
     width: 38px;
     height: 34px;
+    font-size: 14px;
     display: inline-block;
     vertical-align: top;
     margin-top: 40px;
@@ -529,7 +553,7 @@ form [type="submit"] {
     height: 58px;
     background-color: #7FB1D0;
     color: white;
-    font-size: 27px;
+    font-size: 21px;
     display: inline-block;
     margin-bottom: 55px;
     margin-right: 55px;
@@ -544,6 +568,7 @@ form [type="submit"]:active {
     background-color: #5496BD;
     color: #7EB0CD
 }
+
 .main-form {
     margin: 0;
     padding: 0;
@@ -567,7 +592,8 @@ form [type="submit"]:active {
     line-height: 20px;
     position: relative;
     cursor: pointer;
-    margin-left: 50px;
+    width: 100%;
+    margin-left: 65px;
     padding-left: 45px;
 }
 
@@ -609,10 +635,19 @@ form [type="submit"]:active {
 
 legend {
     color: white;
-    margin-left: 50px;
+    width: 100%;
+    margin-left: 65px;
     margin-top: 32px;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: bold
+}
+
+.main-form fieldset:nth-of-type(2) legend {
+    margin-left: 25px
+}
+
+.main-form fieldset:nth-of-type(2) input[type="checkbox"] + label {
+    margin-left: 25px
 }
 
 .inner-form {
@@ -621,19 +656,17 @@ legend {
 
 .main-form label {
     float: left;
-    width: 100px;
-    margin: 0;
+    width: 100%;
+    margin: 0px 0px;
     padding: 0;
     clear: left;
-    margin-top: -20px;
-    transform: translateX(0px);
     color: white;
     font-weight: normal
 }
 
 .main-form fieldset {
     float: left;
-    text-align:left;
+    text-align: left;
     max-width: 25%;
     min-width: 25%;
     height: auto;
@@ -652,17 +685,112 @@ legend {
 }
 
 .main-form fieldset:last-of-type legend {
-    margin-left: auto;
+    margin-left: 0px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.filter-range {
+    width: 54%;
+    margin-left: 32%;
     margin-right: auto;
 }
 
-.main-form input[type="range"] {
-    display: inline-block;
-    max-width: 247px;
-    height: 2px;
-    margin-top: 40px;   
+.main-form fieldset:last-of-type input {
+    width: 50%;
+    margin: 0;
+    margin-top: -1px;
+    height: 38px;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+    float: none;
+}
+
+.price-controls {
+    height: 38px;
+    position: relative;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    width: 100%;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 0px;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+    line-height: 38px;
+    margin-top: 0px;
+    float: none;
+    cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 40%;
+    padding-left: 10%;
+}
+
+.price-controls .min-price {
+    width: 37%;
+    padding-left: 13%;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
 }
 
 .main-form button {
@@ -674,8 +802,9 @@ legend {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 3px;
-    font-size: 17px;
-    font-family: "PT Sans" sans-serif
+    font-size: 14px;
+    font-family: "PT Sans" sans-serif;
+    text-transform: uppercase;
 }
 
 .sort h2 {
@@ -750,6 +879,7 @@ legend {
     background-color: #F0F0F0;
     padding: 5px 10px;
     margin-top: 60px;
+    margin-right: 73px;
 }
 
 .results-item .inf {
