@@ -84,8 +84,8 @@ nav li:nth-child(3) {
     position: relative;
     width: 100%;
     background-image: url(../img/mountains.jpg);
-    background-size: cover;
-    background-position: 0px -100px;
+    background-size:1200px;
+    background-position: center -90px;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -448,8 +448,8 @@ form .form-row:nth-of-type(2) input {
     position: relative;
 }
 
-form .form-row:first-of-type::after,
-form .form-row:nth-of-type(2)::after {
+form .form-row:first-of-type ::after,
+form .form-row:nth-of-type(2) ::after {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
@@ -563,14 +563,61 @@ form input:focus {
     width: 38px;
     height: 34px;
     font-size: 14px;
+    position: relative;
     display: inline-block;
     vertical-align: top;
     margin-top: 40px;
 }
 
+.number-child button:first-of-type::before,
+.number-parents button:first-of-type::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 11px;
+    background-image: url(../img/spritesheet.png);
+    background-position: -70px 0px;
+    left: 15px;
+    top: 11px;
+}
+
+.number-child button:nth-of-type(2)::before,
+.number-parents button:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 11px;
+    background-image: url(../img/spritesheet.png);
+    background-position: -88px -5px;
+    left: 14px;
+    top: 12px;
+}
+
+.number-child button:nth-of-type(2):hover::before,
+.number-parents button:nth-of-type(2):hover::before {
+    background-position: -109px -5px;
+}
+
+.number-child button:first-of-type:hover::before,
+.number-parents button:first-of-type:hover::before {
+    background-position: -9px -32px;
+}
+
+.number-child button:nth-of-type(2):active::before,
+.number-parents button:nth-of-type(2):active::before {
+    background-position: -27px -37px;
+}
+
 .form-col:last-child label {
     margin-left: 51px;
     width: 40px;
+}
+
+.number-child button:first-of-type:active::before,
+.number-parents button:first-of-type:active::before {
+    background-position: -83px -32px;
 }
 
 .form-col label {
@@ -640,6 +687,7 @@ form [type="submit"]:active {
     top: 0;
     left: 0;
 }
+
 .main-form input[type="checkbox"]:checked + label::after {
     content: "";
     display: block;
@@ -669,8 +717,7 @@ legend {
     font-weight: bold
 }
 
-.main-form fieldset:nth-of-type(2) legend {
-}
+.main-form fieldset:nth-of-type(2) legend {}
 
 .main-form fieldset:nth-of-type(2) input[type="checkbox"] + label {
     margin-left: 0px
