@@ -435,12 +435,42 @@ iframe {
     height: 582px;
     position: absolute;
     z-index: 1;
-    top: 2181px;
+    top: 2184px;
     right: 0px;
 }
 
 form .form-row:first-of-type label {
     margin-top: 50px;
+}
+
+form .form-row:first-of-type input,
+form .form-row:nth-of-type(2) input {
+    position: relative;
+}
+
+form .form-row:first-of-type::after,
+form .form-row:nth-of-type(2)::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 22px;
+    background-image: url(../img/spritesheet.png);
+    background-position: -35px -6px;
+    left: 480px;
+    z-index: 2
+}
+
+form .form-row:hover::after {
+    background-position: -130px -6px;
+}
+
+form .form-row:focus::after {
+    background-position: -48px -38px;
+}
+
+form .form-row:active::after {
+    background-position: -48px -38px;
 }
 
 form label {
@@ -499,7 +529,7 @@ form input:focus {
 
 .number-child,
 .number-parents {
-    font-size: 0px; 
+    font-size: 0px;
     width: 120px;
     float: right;
     margin-right: 55px
@@ -520,7 +550,6 @@ form input:focus {
     float: none;
     padding: 0;
     margin-right: 0;
-    
 }
 
 .number-parents input,
@@ -592,8 +621,7 @@ form [type="submit"]:active {
     line-height: 20px;
     position: relative;
     cursor: pointer;
-    width: 100%;
-    margin-left: 65px;
+    width: 50%;
     padding-left: 45px;
 }
 
@@ -612,7 +640,6 @@ form [type="submit"]:active {
     top: 0;
     left: 0;
 }
-
 .main-form input[type="checkbox"]:checked + label::after {
     content: "";
     display: block;
@@ -635,33 +662,28 @@ form [type="submit"]:active {
 
 legend {
     color: white;
-    width: 100%;
-    margin-left: 65px;
     margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 16px;
     font-weight: bold
 }
 
 .main-form fieldset:nth-of-type(2) legend {
-    margin-left: 25px
 }
 
 .main-form fieldset:nth-of-type(2) input[type="checkbox"] + label {
-    margin-left: 25px
-}
-
-.inner-form {
-    width: 200px;
+    margin-left: 0px
 }
 
 .main-form label {
     float: left;
-    width: 100%;
+    width: 100x;
     margin: 0px 0px;
     padding: 0;
     clear: left;
     color: white;
-    font-weight: normal
+    font-weight: normal;
 }
 
 .main-form fieldset {
@@ -673,14 +695,13 @@ legend {
     margin: 0;
     margin-top: 30px;
     padding: 0;
-    border: none
+    border: none;
 }
 
 .main-form fieldset:last-of-type {
     height: 50%;
-    width: 50%;
-    max-width: 50%;
     min-width: 50%;
+    max-width: 50%;
     text-align: center
 }
 
