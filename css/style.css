@@ -56,14 +56,19 @@ nav li {
     box-sizing: border-box;
     vertical-align: top
 }
-nav li:nth-child(1), nav li:nth-child(2){
-        padding-left: 6%;
+
+nav li:nth-child(1),
+nav li:nth-child(2) {
+    padding-left: 6%;
     text-align: left;
 }
-nav li:nth-child(3), nav li:nth-child(4){
+
+nav li:nth-child(3),
+nav li:nth-child(4) {
     padding-right: 6%;
     text-align: right;
 }
+
 nav li a {
     text-decoration: none;
     font: bold 14px "PT Sans", "Arial", sans-serif;
@@ -350,7 +355,7 @@ footer {
     height: 48px;
     background-color: #81B3D2;
     position: relative;
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 .footer-social .social-btn:hover {
@@ -438,6 +443,10 @@ form {
     z-index: 2
 }
 
+.for-map {
+    position: relative
+}
+
 iframe {
     width: 100%;
     min-width: 768px;
@@ -445,7 +454,7 @@ iframe {
     height: 582px;
     position: absolute;
     z-index: 1;
-    top: 2184px;
+    top: -387px;
     right: 0px;
 }
 
@@ -458,29 +467,38 @@ form .form-row:nth-of-type(2) input {
     position: relative;
 }
 
-.form-row:first-of-type ::after,
-.form-row:nth-of-type(2) ::after {
+.form-row:first-of-type .calendar,
+.form-row:nth-of-type(2) .calendar {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
     width: 21px;
     height: 22px;
     background-image: url(../img/spritesheet.png);
-    background-position: -30px -6px;
+    background-position: -30px -1px;
     left: 480px;
+    top: 50px;
     z-index: 2
 }
 
-form .form-row:hover ::after {
-    background-position: -125px -6px;
+.form-row:nth-of-type(2) .calendar {
+    top: 130px;
 }
 
-form .form-row:focus ::after {
-    background-position: -48px -38px;
+.form-row:nth-of-type(2) .calendar:hover {
+    background-position: -125px -1px;
 }
 
-form .form-row:active ::after {
-    background-position: -48px -38px;
+.form-row:nth-of-type(1) .calendar:hover {
+    background-position: -125px -1px;
+}
+
+.form-row:nth-of-type(1) .calendar:active {
+    background-position: -43px -33px;
+}
+
+.form-row:nth-of-type(2) .calendar:active {
+    background-position: -43px -33px;
 }
 
 form label {
@@ -601,14 +619,14 @@ form input:focus {
     width: 11px;
     height: 11px;
     background-image: url(../img/spritesheet.png);
-    background-position: -83px -1px;
+    background-position: -83px 0px;
     left: 14px;
     top: 12px;
 }
 
 .number-child button:nth-of-type(2):hover::before,
 .number-parents button:nth-of-type(2):hover::before {
-    background-position: -104px -1px;
+    background-position: -104px 0px;
 }
 
 .number-child button:first-of-type:hover::before,
@@ -618,7 +636,7 @@ form input:focus {
 
 .number-child button:nth-of-type(2):active::before,
 .number-parents button:nth-of-type(2):active::before {
-    background-position: -22px -33px;
+    background-position: -22px -32px;
 }
 
 .form-col:last-child label {
@@ -672,16 +690,19 @@ form [type="submit"]:active {
 .main-form input[type="checkbox"] {
     display: none;
 }
-.main-form label{
+
+.main-form label {
     width: auto;
     margin: 0;
     float: none;
 }
-.main-form input{
+
+.main-form input {
     padding: 0;
     margin: 0;
     float: none;
 }
+
 .main-form input[type="checkbox"] + label {
     display: block;
     float: none;
@@ -736,19 +757,19 @@ legend {
     font-size: 16px;
     font-weight: bold
 }
-.filter-range p{
+
+.filter-range p {
     color: white;
     font-size: 16px;
     font-weight: bold;
-     margin-left: 0px;
+    margin-left: 0px;
     text-align: left;
     margin-top: 0;
 }
 
 .main-form fieldset:nth-of-type(2) legend {}
 
-.main-form fieldset:nth-of-type(2) input[type="checkbox"] + label {
-}
+.main-form fieldset:nth-of-type(2) input[type="checkbox"] + label {}
 
 .main-form label {
     float: none;
@@ -769,22 +790,21 @@ legend {
     float: right;
     height: 170px;
     width: 30%;
-    min-width: 225px; 
-	max-width: 320px;
+    min-width: 225px;
+    max-width: 320px;
     text-align: center;
     margin-right: 0%;
     margin-top: 0;
     padding-right: 6%;
 }
-.main-form fieldset:nth-of-type(2){
- margin-left: 3.5%;   
-}
-.inner-form{
 
+.main-form fieldset:nth-of-type(2) {
+    margin-left: 3.5%;
 }
-.filter-range {
-    
-}
+
+.inner-form {}
+
+.filter-range {}
 
 .main-form fieldset:last-of-type input {
     width: 50%;
@@ -805,8 +825,6 @@ legend {
     border: 2px solid #ffffff;
     border-radius: 3px;
     width: 100%;
-   
-    
     margin-top: 10px;
     font-size: 0px;
 }
@@ -898,7 +916,6 @@ legend {
 }
 
 .sort h2 {
-  
     margin-top: 18px;
     font-size: 21px;
     font-weight: bold;
@@ -925,10 +942,12 @@ legend {
     margin-top: 20px;
     margin-left: 33px;
 }
-.sort li:first-child a{
+
+.sort li:first-child a {
     border: none;
-    color:#7FB1D0;
+    color: #7FB1D0;
 }
+
 .sort li a {
     padding: 0;
     margin-top: 0px;
@@ -941,8 +960,9 @@ legend {
     border-bottom: 1px dotted #81B3D2;
     height: 18px;
 }
-.arrows{
-   width: 30px;
+
+.arrows {
+    width: 30px;
     position: relative;
     margin: 0;
     height: 10px;
@@ -951,7 +971,9 @@ legend {
     margin-top: -50px;
     background-color: transparent;
 }
-.arrows span{
+
+.arrows span {
+    cursor: pointer;
     position: absolute;
     top: -22px;
     left: -50px;
@@ -960,11 +982,29 @@ legend {
     background-image: url(../img/spritesheet.png);
     background-position: -369px -1px
 }
-.arrows span:last-of-type{
+
+.arrows span:hover {
+    background-position: -353px -1px
+}
+
+.arrows span:last-of-type:hover {
+    background-position: -353px -1px
+}
+
+.arrows span:active {
+    background-position: -385px -1px
+}
+
+.arrows span:last-of-type {
     left: -30px;
     transform: rotate(180deg);
     background-position: -385px -1px
 }
+
+.arrows span:last-of-type:active {
+    background-position: -385px -1px
+}
+
 .sort li a:hover {
     color: #81B3D2;
 }
@@ -987,10 +1027,9 @@ legend {
 }
 
 .results-item {
-        padding-left: 6%;
-
+    padding-left: 6%;
     border-bottom: 1px solid #E3E3E3;
-    height: 120px;
+    height: 118px;
 }
 
 .results-item .image {
@@ -1001,17 +1040,36 @@ legend {
 .results-item .raiting {
     float: right;
     background-color: #F0F0F0;
+    position: relative;
     padding: 5px 10px;
-    margin-top: 60px;
+    margin-top: 58px;
     margin-right: 73px;
+}
+
+.raiting span {
+    position: absolute;
+    top: -60px;
+    width: 90px;
+    height: 17px;
+    background-image: url(../img/spritesheet.png);
+    background-position: -280px -35px;
+    background-color: transparent;
+}
+
+.results-item:nth-child(2) .raiting span {
+    background-position: -233px -35px;
+}
+
+.results-item:nth-child(3) .raiting span {
+    background-position: -256px -35px;
 }
 
 .results-item .inf {
     margin: 0;
     padding: 0;
-    margin-left: 160px;
+    margin-left: 166px;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .inf a h2 {
