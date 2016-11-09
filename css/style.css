@@ -42,21 +42,31 @@ header {
     position: relative;
 }
 
-ul {
+header ul {
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-size: 0;
 }
 
 nav li {
-    float: left;
+    display: inline-block;
     width: 20%;
     list-style: none;
-    text-align: center;
-    padding: 18px 0;
+    padding: 14px 0 12px 0;
+    box-sizing: border-box;
+    vertical-align: top
 }
-
+nav li:nth-child(1), nav li:nth-child(2){
+        padding-left: 6%;
+    text-align: left;
+}
+nav li:nth-child(3), nav li:nth-child(4){
+    padding-right: 6%;
+    text-align: right;
+}
 nav li a {
     text-decoration: none;
+    font: bold 14px "PT Sans", "Arial", sans-serif;
     color: black;
     font-weight: bold;
     line-height: 26px;
@@ -84,7 +94,7 @@ nav li:nth-child(3) {
     position: relative;
     width: 100%;
     background-image: url(../img/mountains.jpg);
-    background-size:1200px;
+    background-size: 1200px;
     background-position: center -90px;
     background-repeat: no-repeat;
     position: relative;
@@ -368,19 +378,19 @@ footer {
 .social-btn-tw::before {
     width: 17px;
     height: 15px;
-    background-position: -250px -83px;
+    background-position: -245px -78px;
 }
 
 .social-btn-fb::before {
     width: 10px;
     height: 19px;
-    background-position: -252px -54px;
+    background-position: -248px -49px;
 }
 
 .social-btn-yb::before {
     width: 20px;
     height: 16px;
-    background-position: -5px -5px;
+    background-position: 0px 0px;
 }
 
 .footer-copyright p {
@@ -399,18 +409,18 @@ footer {
     height: 40px;
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
-    background-position: -4px -69px;
+    background-position: 1px -64px;
     transform: translate(-50%, -50%);
     top: 0%;
     left: 60px;
 }
 
 .footer-copyright a:hover {
-    background-position: -160px -5px;
+    background-position: -155px 0px;
 }
 
 .footer-copyright a:active {
-    background-position: -127px -54px;
+    background-position: -122px -49px;
 }
 
 .main-footer {
@@ -448,28 +458,28 @@ form .form-row:nth-of-type(2) input {
     position: relative;
 }
 
-form .form-row:first-of-type ::after,
-form .form-row:nth-of-type(2) ::after {
+.form-row:first-of-type ::after,
+.form-row:nth-of-type(2) ::after {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
     width: 21px;
     height: 22px;
     background-image: url(../img/spritesheet.png);
-    background-position: -35px -6px;
+    background-position: -30px -6px;
     left: 480px;
     z-index: 2
 }
 
-form .form-row:hover::after {
-    background-position: -130px -6px;
+form .form-row:hover ::after {
+    background-position: -125px -6px;
 }
 
-form .form-row:focus::after {
+form .form-row:focus ::after {
     background-position: -48px -38px;
 }
 
-form .form-row:active::after {
+form .form-row:active ::after {
     background-position: -48px -38px;
 }
 
@@ -567,6 +577,7 @@ form input:focus {
     display: inline-block;
     vertical-align: top;
     margin-top: 40px;
+    font-size: 0px;
 }
 
 .number-child button:first-of-type::before,
@@ -577,7 +588,7 @@ form input:focus {
     width: 11px;
     height: 11px;
     background-image: url(../img/spritesheet.png);
-    background-position: -70px 0px;
+    background-position: -64px 5px;
     left: 15px;
     top: 11px;
 }
@@ -590,24 +601,24 @@ form input:focus {
     width: 11px;
     height: 11px;
     background-image: url(../img/spritesheet.png);
-    background-position: -88px -5px;
+    background-position: -83px -1px;
     left: 14px;
     top: 12px;
 }
 
 .number-child button:nth-of-type(2):hover::before,
 .number-parents button:nth-of-type(2):hover::before {
-    background-position: -109px -5px;
+    background-position: -104px -1px;
 }
 
 .number-child button:first-of-type:hover::before,
 .number-parents button:first-of-type:hover::before {
-    background-position: -9px -32px;
+    background-position: -3px -27px;
 }
 
 .number-child button:nth-of-type(2):active::before,
 .number-parents button:nth-of-type(2):active::before {
-    background-position: -27px -37px;
+    background-position: -22px -33px;
 }
 
 .form-col:last-child label {
@@ -617,7 +628,7 @@ form input:focus {
 
 .number-child button:first-of-type:active::before,
 .number-parents button:first-of-type:active::before {
-    background-position: -83px -32px;
+    background-position: -77px -27px;
 }
 
 .form-col label {
@@ -661,19 +672,30 @@ form [type="submit"]:active {
 .main-form input[type="checkbox"] {
     display: none;
 }
-
+.main-form label{
+    width: auto;
+    margin: 0;
+    float: none;
+}
+.main-form input{
+    padding: 0;
+    margin: 0;
+    float: none;
+}
 .main-form input[type="checkbox"] + label {
     display: block;
-    margin: 10px 0;
+    float: none;
     line-height: 20px;
     position: relative;
+    width: auto;
+    margin: 0;
+    margin-top: 26px;
     cursor: pointer;
-    width: 50%;
-    padding-left: 45px;
+    padding-left: 40px;
 }
 
 .main-form input[type="checkbox"] + label:first-of-type {
-    margin-top: 25px;
+    margin-top: 0px;
 }
 
 .main-form input[type="checkbox"] + label::before {
@@ -682,7 +704,7 @@ form [type="submit"]:active {
     width: 24px;
     height: 22px;
     background-image: url(../img/spritesheet.png);
-    background-position: -287px -6px;
+    background-position: -282px -2px;
     position: absolute;
     top: 0;
     left: 0;
@@ -694,7 +716,7 @@ form [type="submit"]:active {
     width: 24px;
     height: 22px;
     background-image: url(../img/spritesheet.png);
-    background-position: -323px -7px;
+    background-position: -318px -3px;
     position: absolute;
     top: 0;
     left: 0;
@@ -710,58 +732,58 @@ form [type="submit"]:active {
 
 legend {
     color: white;
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 5px;
     font-size: 16px;
     font-weight: bold
+}
+.filter-range p{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+     margin-left: 0px;
+    text-align: left;
+    margin-top: 0;
 }
 
 .main-form fieldset:nth-of-type(2) legend {}
 
 .main-form fieldset:nth-of-type(2) input[type="checkbox"] + label {
-    margin-left: 0px
 }
 
 .main-form label {
-    float: left;
-    width: 100x;
+    float: none;
     margin: 0px 0px;
     padding: 0;
-    clear: left;
     color: white;
     font-weight: normal;
 }
 
 .main-form fieldset {
     float: left;
-    text-align: left;
-    max-width: 25%;
-    min-width: 25%;
-    height: auto;
-    margin: 0;
-    margin-top: 30px;
-    padding: 0;
+    padding: 27px 0 30px 6%;
+    margin-top: 25px;
     border: none;
 }
 
 .main-form fieldset:last-of-type {
-    height: 50%;
-    min-width: 50%;
-    max-width: 50%;
-    text-align: center
-}
-
-.main-form fieldset:last-of-type legend {
-    margin-left: 0px;
-    text-align: left;
+    float: right;
+    height: 170px;
+    width: 30%;
+    min-width: 225px; 
+	max-width: 320px;
+    text-align: center;
+    margin-right: 0%;
     margin-top: 0;
+    padding-right: 6%;
 }
+.main-form fieldset:nth-of-type(2){
+ margin-left: 3.5%;   
+}
+.inner-form{
 
+}
 .filter-range {
-    width: 54%;
-    margin-left: 32%;
-    margin-right: auto;
+    
 }
 
 .main-form fieldset:last-of-type input {
@@ -783,8 +805,8 @@ legend {
     border: 2px solid #ffffff;
     border-radius: 3px;
     width: 100%;
-    margin-right: auto;
-    margin-left: 0px;
+   
+    
     margin-top: 10px;
     font-size: 0px;
 }
@@ -876,8 +898,9 @@ legend {
 }
 
 .sort h2 {
-    margin-left: 72px;
-    margin-top: 35px;
+  
+    margin-top: 18px;
+    font-size: 21px;
     font-weight: bold;
     float: left;
     clear: left
@@ -890,27 +913,58 @@ legend {
 
 .sort {
     border-bottom: 1px solid #E3E3E3;
-    height: 100px
+    height: 67px;
+    padding-left: 6%
 }
 
 .sort li {
     list-style: none;
     float: left;
-    height: 20px;
-    margin-top: 40px;
+    padding: 0;
+    height: 17px;
+    margin-top: 20px;
     margin-left: 33px;
 }
-
+.sort li:first-child a{
+    border: none;
+    color:#7FB1D0;
+}
 .sort li a {
+    padding: 0;
     margin-top: 0px;
     float: left;
     clear: left;
+    line-height: 21px;
     text-decoration: none;
     font-size: 12px;
     color: #cacaca;
-    border-bottom: 1px dotted #81B3D2
+    border-bottom: 1px dotted #81B3D2;
+    height: 18px;
 }
-
+.arrows{
+   width: 30px;
+    position: relative;
+    margin: 0;
+    height: 10px;
+    float: right;
+    margin-right: 73px;
+    margin-top: -50px;
+    background-color: transparent;
+}
+.arrows span{
+    position: absolute;
+    top: -22px;
+    left: -50px;
+    width: 11px;
+    height: 10px;
+    background-image: url(../img/spritesheet.png);
+    background-position: -369px -1px
+}
+.arrows span:last-of-type{
+    left: -30px;
+    transform: rotate(180deg);
+    background-position: -385px -1px
+}
 .sort li a:hover {
     color: #81B3D2;
 }
@@ -921,18 +975,20 @@ legend {
 }
 
 .sort li:first-child a {
-    margin-left: 40px;
+    margin-left: 0px;
 }
 
 .sort span {
     margin-left: 49px;
     float: left;
-    margin-top: 40px;
+    margin-top: 22px;
     font-size: 12px;
+    line-height: 21px;
 }
 
 .results-item {
-    padding-left: 72px;
+        padding-left: 6%;
+
     border-bottom: 1px solid #E3E3E3;
     height: 120px;
 }
