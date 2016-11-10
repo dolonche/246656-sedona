@@ -137,8 +137,40 @@ nav li a:active {
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    z-index: 200;
+    background-color: transparent;
 }
-
+.stick{
+    position: relative;
+}
+.stick::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #756256;
+    display: block;
+    top: 137px;
+    left: -220px;
+    right: 0;
+    z-index: 300;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.stick::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #756256;
+    display: block;
+    top: 137px;
+    left: 220px;
+    right: 0;
+    z-index: 300;
+    margin-left: auto;
+    margin-right: auto; 
+}
 .main-page-content .about-sedona {
     text-align: center;
     padding-top: 61px;
