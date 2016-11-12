@@ -140,10 +140,12 @@ nav li a:active {
     z-index: 200;
     background-color: transparent;
 }
-.stick{
+
+.stick {
     position: relative;
 }
-.stick::before{
+
+.stick::before {
     content: "";
     position: absolute;
     width: 25px;
@@ -155,9 +157,10 @@ nav li a:active {
     right: 0;
     z-index: 300;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
-.stick::after{
+
+.stick::after {
     content: "";
     position: absolute;
     width: 25px;
@@ -169,8 +172,9 @@ nav li a:active {
     right: 0;
     z-index: 300;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
+
 .main-page-content .about-sedona {
     text-align: center;
     padding-top: 61px;
@@ -828,6 +832,7 @@ legend {
 .main-form fieldset:nth-of-type(2) {
     margin-left: 3.5%;
 }
+
 .main-form fieldset:last-of-type input {
     width: 50%;
     margin: 0;
@@ -1068,21 +1073,21 @@ legend {
     margin-right: 73px;
 }
 
-.raiting span {
-    position: absolute;
-    top: -60px;
+.stars {
+    float: right;
     width: 90px;
     height: 17px;
+    margin-right: -102px;
     background-image: url(../img/spritesheet.png);
     background-position: -280px -35px;
     background-color: transparent;
 }
 
-.results-item:nth-child(2) .raiting span {
+.results-item:nth-child(2) .stars {
     background-position: -233px -35px;
 }
 
-.results-item:nth-child(3) .raiting span {
+.results-item:nth-child(3) .stars {
     background-position: -256px -35px;
 }
 
