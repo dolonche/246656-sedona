@@ -333,7 +333,7 @@ nav li a:active {
 .pre-form-message h2 {
     text-align: center;
     font-size: 30px;
-    font-weight: bold
+    font-weight: bold;
 }
 
 .pre-form-message p {
@@ -350,6 +350,7 @@ nav li a:active {
     margin-right: auto;
     background-color: #756256;
     margin-top: 50px;
+    cursor: pointer
 }
 
 .form-title h3 {
@@ -476,6 +477,26 @@ form {
     background-color: #fff;
     position: relative;
     z-index: 2
+}
+
+@keyframes animate-form {
+    0% {
+        transform: translateY(-2000px);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.form-index{
+    z-index: -100;
+}
+.animated-form {
+    animation-name: animate-form;
+    animation-duration: 1s;
+    z-index:100
 }
 
 .for-map {
