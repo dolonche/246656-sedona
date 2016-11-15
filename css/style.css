@@ -110,6 +110,7 @@ nav li:nth-child(3) {
     width: 100%;
     min-width: 768px;
     height: 57px;
+    background-color: aqua;
     background-image: url(../img/tooth.png);
     background-position: bottom;
     background-color: transparent;
@@ -273,6 +274,7 @@ nav li a:active {
 .img-wrapper img {
     max-width: 100%;
     width: auto;
+    background-color: saddlebrown;
 }
 
 .number-item {
@@ -1098,8 +1100,15 @@ legend {
 .results-item .image {
     float: left;
     margin-top: 0px;
+    height: 90px;
+    background-color: #74243D;
 }
-
+.results-item:nth-of-type(2) .image{
+    background-color: #96878A;
+}
+.results-item:last-of-type(2) .image{
+    background-color: #35432A;
+}
 .results-item .raiting {
     float: right;
     background-color: #F0F0F0;
