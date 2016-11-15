@@ -1,83 +1,82 @@
+body,h2,h3 {
+    font-weight: 400
+}
+
 body {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    color: #333333;
-    font-weight: normal;
-    background-color: #F0F0F0;
+    color: #333;
+    background-color: #f0f0f0;
     text-transform: uppercase;
+    font-family: "PT Sans","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 21px
 }
 
 .wrapper {
     max-width: 1200px;
     min-width: 768px;
     margin: auto;
-    background-color: #FDFDFD;
-    box-shadow: 0px 5px 5px 5px #E2E2E2;
+    background-color: #fdfdfd;
+    box-shadow: 0 5px 5px 5px #e2e2e2
 }
 
-h2 {
-    font-family: "PT Sans", sans-serif;
+h2,h3 {
+    font-family: "PT Sans",sans-serif;
     font-size: 30px;
-    line-height: 24px;
-    font-weight: normal;
+    line-height: 24px
 }
 
 h3 {
-    font-family: "PT Sans", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 21px;
     line-height: 26px;
-    color: #000000
+    color: #000
 }
 
 .clearfix:after {
     display: table;
     content: "";
-    clear: both;
+    clear: both
 }
 
 header {
-    position: relative;
+    position: relative
 }
 
 header ul {
     margin: 0;
     padding: 0;
-    font-size: 0;
+    font-size: 0
 }
 
 nav li {
     display: inline-block;
     width: 20%;
     list-style: none;
-    padding: 14px 0 12px 0;
+    padding: 14px 0 12px;
     box-sizing: border-box;
     vertical-align: top
 }
 
-nav li:nth-child(1),
-nav li:nth-child(2) {
+nav li:nth-child(1),nav li:nth-child(2) {
     padding-left: 6%;
-    text-align: left;
+    text-align: left
 }
 
-nav li:nth-child(3),
-nav li:nth-child(4) {
+nav li:nth-child(3),nav li:nth-child(4) {
     padding-right: 6%;
-    text-align: right;
+    text-align: right
 }
 
 nav li a {
     text-decoration: none;
-    font: bold 14px "PT Sans", "Arial", sans-serif;
-    color: black;
-    font-weight: bold;
-    line-height: 26px;
+    font: 700 14px "PT Sans","Arial",sans-serif;
+    color: #000;
+    font-weight: 700;
+    line-height: 26px
 }
 
 nav li:nth-child(3) {
-    margin-left: 20%;
+    margin-left: 20%
 }
 
 .logo {
@@ -90,55 +89,53 @@ nav li:nth-child(3) {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    z-index: 100;
+    z-index: 100
 }
 
-.intro {
+.intro,.intro::after {
     height: 512px;
-    position: relative;
     width: 100%;
     background-image: url(../img/mountains.jpg);
     background-size: 1200px;
     background-position: center -90px;
     background-repeat: no-repeat;
-    position: relative;
+    position: relative
 }
 
 .intro::after {
     content: "";
     position: absolute;
-    width: 100%;
     min-width: 768px;
     height: 57px;
     background-image: url(../img/tooth.png);
     background-position: bottom;
     background-color: transparent;
     background-size: contain;
-    background-repeat: no-repeat;
     display: block;
     top: 100%;
     margin-top: -57px;
-    z-index: 400;
+    z-index: 400
 }
 
 nav li a:hover {
-    color: #81B3D2;
+    color: #81b3d2
 }
 
 nav li a:active {
-    color: #B2B2B2;
-}
-
-.active {
-    color: #766357;
+    color: #b2b2b2
 }
 
 .active:hover {
-    color: #604e43;
+    color: #604e43
 }
 
-.active:active {
-    color: #766357;
+.active,.active:active {
+    color: #766357
+}
+
+.arround-picture h3,.intro img,.main-page-content .about-sedona {
+    margin-left: auto;
+    margin-right: auto
 }
 
 .intro img {
@@ -147,36 +144,35 @@ nav li a:active {
     bottom: 0;
     left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
     z-index: 200;
-    background-color: transparent;
+    background-color: transparent
 }
 
 .main-page-content .about-sedona {
     text-align: center;
     padding-top: 61px;
     font-size: 21px;
-    width: 440px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 440px
 }
 
 .main-page-content .features-title {
     text-align: center;
-    line-height: 26px;
+    line-height: 26px
 }
 
 .about-sedona-wrapper {
     height: 217px;
     margin-top: -30px;
-    background-color: white;
+    background-color: #fff
+}
+
+.cause,.description {
+    background-color: #7fb1d0
 }
 
 .cause {
-    font-size: 0px;
     height: 256px;
-    background-color: #7FB1D0
+    font-size: 0
 }
 
 .description {
@@ -185,28 +181,25 @@ nav li a:active {
     min-height: 256px;
     vertical-align: top;
     font-size: 14px;
-    text-align: center;
-    background-color: #7FB1D0
+    text-align: center
 }
 
 .arround-picture {
     max-width: 302px;
-    color: #ffffff;
+    color: #fff;
     margin: auto
 }
 
 .arround-picture h3 {
-    color: #ffffff;
+    color: #fff;
     width: 151px;
     line-height: 21px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 53px;
+    margin-top: 53px
 }
 
 .advantages {
     font-size: 0;
-    height: 331px;
+    height: 331px
 }
 
 .advantages-item {
@@ -216,7 +209,7 @@ nav li a:active {
     text-align: center;
     vertical-align: top;
     position: relative;
-    margin-top: 164px;
+    margin-top: 164px
 }
 
 .advantages-item:first-of-type::before {
@@ -227,13 +220,13 @@ nav li a:active {
     height: 72px;
     bottom: 125px;
     right: 50%;
-    margin-right: -37px;
+    margin-right: -37px
 }
 
 .inner-wrapper {
     max-width: 285px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .advantages-item:nth-of-type(2)::before {
@@ -244,7 +237,7 @@ nav li a:active {
     height: 70px;
     bottom: 125px;
     right: 50%;
-    margin-right: -37px;
+    margin-right: -37px
 }
 
 .advantages-item:last-of-type::before {
@@ -255,98 +248,95 @@ nav li a:active {
     height: 76px;
     bottom: 125px;
     right: 50%;
-    margin-right: -32px;
+    margin-right: -32px
 }
 
 .advantages-item b {
-    font-family: "PT Sans", sans-serif;
-    font-weight: bold;
-    font-size: 21px;
+    font-family: "PT Sans",sans-serif;
+    font-weight: 700;
+    font-size: 21px
 }
 
-.img-wrapper {
+.footer-social .social-btn,.img-wrapper,.inner-cause-wrapper h3,.number-item {
     display: inline-block;
     width: 66.666666%;
-    vertical-align: top;
+    vertical-align: top
 }
 
 .img-wrapper img {
     max-width: 100%;
-    width: auto;
+    width: auto
 }
 
 .number-item {
     font-size: 14px;
-    display: inline-block;
     width: 33.333333%;
     height: 256px;
     text-align: center;
-    vertical-align: top;
-    background-color: #ECECEC;
-    margin-top: 0;
+    background-color: #ececec;
+    margin-top: 0
 }
 
 .inner-cause-wrapper {
     max-width: 265px;
     height: 142px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .inner-cause-wrapper h3 {
-    display: inline-block;
-    vertical-align: top;
     line-height: 21px;
     margin-top: 50px;
-    width: 145px;
+    width: 145px
 }
 
-.pre-form-message {
+.form-title,.pre-form-message {
     width: 434px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -30px;
+    margin-top: -30px
 }
 
 .pre-form-message h2 {
     text-align: center;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .pre-form-message p {
     text-align: center;
     width: 399px;
-    line-height: 24px;
+    line-height: 24px
 }
 
 .form-title {
     text-align: center;
     width: 568px;
     height: 86px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #756256;
     margin-top: 50px;
     cursor: pointer
 }
 
 .form-title h3 {
-    color: white;
+    color: #fff;
     padding-top: 30px;
-    font-style: 21px;
+    font-style: 21px
+}
+
+footer,form {
+    position: relative
 }
 
 footer {
-    font-size: 0px;
+    font-size: 0;
     height: 120px;
-    z-index: 3;
-    background-color: rgba(255, 255, 255, 0.9);
-    position: relative;
+    background-color: rgba(255,255,255,.9);
     margin-top: 80px;
+    z-index: 3
 }
 
-[class^="footer-"] {
+[class^=footer-] {
     display: inline-block;
     width: 33.3%;
     font-size: 14px;
@@ -357,26 +347,24 @@ footer {
 
 .footer-hashtag {
     font-size: 21px;
-    font-weight: bold
+    font-weight: 700
 }
 
 .footer-social .social-btn {
     font-size: 0;
-    display: inline-block;
-    vertical-align: top;
     width: 46px;
     height: 48px;
-    background-color: #81B3D2;
+    background-color: #81b3d2;
     position: relative;
-    margin-left: 2px;
+    margin-left: 2px
 }
 
 .footer-social .social-btn:hover {
-    background-color: #669EC0;
+    background-color: #669ec0
 }
 
 .footer-social .social-btn:active {
-    background-color: #5496BD;
+    background-color: #5496bd
 }
 
 .social-btn::before {
@@ -384,43 +372,41 @@ footer {
     position: absolute;
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     top: 50%;
-    left: 50%;
+    left: 50%
 }
 
 .social-btn:active::before {
-    opacity: 0.3
+    opacity: .3
 }
 
 .social-btn-tw::before {
     width: 17px;
     height: 15px;
-    background-position: -245px -78px;
+    background-position: -245px -78px
 }
 
 .social-btn-fb::before {
     width: 10px;
     height: 19px;
-    background-position: -248px -49px;
+    background-position: -248px -49px
 }
 
 .social-btn-yb::before {
     width: 20px;
     height: 16px;
-    background-position: 0px 0px;
+    background-position: 0 0
 }
 
-.footer-copyright p {
+.footer-copyright a,.footer-copyright p {
     display: inline-block;
     vertical-align: top;
-    margin-top: 30px;
+    margin-top: 30px
 }
 
 .footer-copyright a {
     font-size: 0;
-    display: inline-block;
-    vertical-align: top;
     margin-top: 40px;
     position: relative;
     width: 115px;
@@ -428,48 +414,49 @@ footer {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     background-position: 1px -64px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     top: 0;
-    left: 60px;
+    left: 60px
 }
 
 .footer-copyright a:hover {
-    background-position: -155px 0px;
+    background-position: -155px 0
 }
 
 .footer-copyright a:active {
-    background-position: -122px -49px;
+    background-position: -122px -49px
 }
 
 .main-footer {
     margin-top: 0;
-    background-color: transparent;
+    background-color: transparent
 }
 
 form {
     width: 568px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 5px 40px -9px #000000;
+    box-shadow: 0 5px 40px -9px #000;
     background-color: #fff;
-    position: relative;
     z-index: 2
 }
 
 @keyframes animate-form {
     0% {
-        transform: translateY(-2000px);
+        transform: translateY(-2000px)
     }
+
     50% {
-        transform: translateY(100px);
+        transform: translateY(100px)
     }
-    100% {
-        transform: translateY(0);
+
+    to {
+        transform: translateY(0)
     }
 }
 
 .form-index {
-    z-index: -100;
+    z-index: -100
 }
 
 .animated-form {
@@ -479,22 +466,16 @@ form {
 }
 
 @keyframes error-form {
-    0%,
-    100% {
-        transform: translateX(0);
+    0%,to {
+        transform: translateX(0)
     }
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-        transform: translateX(-10px);
+
+    10%,30%,50%,70%,90% {
+        transform: translateX(-10px)
     }
-    20%,
-    40%,
-    60%,
-    80% {
-        transform: translateX(10px);
+
+    20%,40%,60%,80% {
+        transform: translateX(10px)
     }
 }
 
@@ -516,20 +497,18 @@ iframe {
     position: absolute;
     z-index: 1;
     top: -387px;
-    right: 0px;
+    right: 0
 }
 
 form .form-row:first-of-type label {
-    margin-top: 50px;
+    margin-top: 50px
 }
 
-form .form-row:first-of-type input,
-form .form-row:nth-of-type(2) input {
-    position: relative;
+form .form-row:first-of-type input,form .form-row:nth-of-type(2) input {
+    position: relative
 }
 
-.form-row:first-of-type .calendar,
-.form-row:nth-of-type(2) .calendar {
+.form-row:first-of-type .calendar,.form-row:nth-of-type(2) .calendar {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
@@ -544,23 +523,15 @@ form .form-row:nth-of-type(2) input {
 }
 
 .form-row:nth-of-type(2) .calendar {
-    top: 130px;
+    top: 130px
 }
 
-.form-row:nth-of-type(2) .calendar:hover {
-    background-position: -125px -1px;
+.form-row:nth-of-type(1) .calendar:hover,.form-row:nth-of-type(2) .calendar:hover {
+    background-position: -125px -1px
 }
 
-.form-row:nth-of-type(1) .calendar:hover {
-    background-position: -125px -1px;
-}
-
-.form-row:nth-of-type(1) .calendar:active {
-    background-position: -43px -33px;
-}
-
-.form-row:nth-of-type(2) .calendar:active {
-    background-position: -43px -33px;
+.form-row:nth-of-type(1) .calendar:active,.form-row:nth-of-type(2) .calendar:active {
+    background-position: -43px -33px
 }
 
 form label {
@@ -568,78 +539,77 @@ form label {
     float: left;
     margin-top: 61px;
     margin-left: 56px;
-    font-weight: bold;
-    cursor: pointer;
+    font-weight: 700;
+    cursor: pointer
+}
+
+button,form input {
+    outline: none;
+    cursor: pointer
 }
 
 form input {
     width: 336px;
     float: right;
-    color: black;
+    color: #000;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     margin-top: 40px;
     padding-left: 10px;
     height: 38px;
     margin-right: 60px;
-    background-color: #F2F2F2;
     border: none;
-    outline: none;
-    cursor: pointer
+    background-color: #f2f2f2
 }
 
 button {
-    outline: none;
-    background-color: #F0F0F0;
-    cursor: pointer
+    background-color: #f0f0f0
 }
 
 input::-webkit-input-placeholder {
-    color: black;
-    font-family: "PT Sans", arial, sans-serif
+    color: #000;
+    font-family: "PT Sans",arial,sans-serif
 }
 
 input::-moz-placeholder {
-    color: black;
-    font-family: "PT Sans", arial, sans-serif
+    color: #000;
+    font-family: "PT Sans",arial,sans-serif
 }
 
 form input:hover {
-    background-color: #EBEBEB;
+    background-color: #ebebeb
 }
 
 form input:active {
-    background-color: white;
+    background-color: #fff
 }
 
 form input:focus {
-    background-color: white;
+    background-color: #fff
 }
 
 .form-col {
     width: 50%;
-    float: left;
+    float: left
 }
 
 .form-col:first-child {
     width: 50%;
-    float: left;
+    float: left
 }
 
-.number-child,
-.number-parents {
-    font-size: 0px;
+.number-child,.number-parents {
+    font-size: 0;
     width: 120px;
     float: right;
     margin-right: 55px
 }
 
 .number-parents {
-    margin-right: 0px
+    margin-right: 0
 }
 
-.number-child input,
-.number-parents input {
+.number-child input,.number-parents input {
     width: 38px;
     height: 34px;
     font-size: 14px;
@@ -648,29 +618,25 @@ form input:focus {
     vertical-align: top;
     float: none;
     padding: 0;
-    margin-right: 0;
+    margin-right: 0
 }
 
-.number-parents input,
-.number-parents button {
+.number-parents button,.number-parents input {
     margin-left: -2px
 }
 
-.number-child button,
-.number-parents button {
+.number-child button,.number-parents button {
     border: none;
     width: 38px;
     height: 34px;
-    font-size: 14px;
     position: relative;
     display: inline-block;
     vertical-align: top;
     margin-top: 40px;
-    font-size: 0px;
+    font-size: 0
 }
 
-.number-child button:first-of-type::before,
-.number-parents button:first-of-type::before {
+.number-child button:first-of-type::before,.number-parents button:first-of-type::before {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
@@ -679,56 +645,51 @@ form input:focus {
     background-image: url(../img/spritesheet.png);
     background-position: -64px 5px;
     left: 15px;
-    top: 11px;
+    top: 11px
 }
 
-.number-child button:nth-of-type(2)::before,
-.number-parents button:nth-of-type(2)::before {
+.number-child button:nth-of-type(2)::before,.number-parents button:nth-of-type(2)::before {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
     width: 11px;
     height: 11px;
     background-image: url(../img/spritesheet.png);
-    background-position: -83px 0px;
+    background-position: -83px 0;
     left: 14px;
-    top: 12px;
+    top: 12px
 }
 
-.number-child button:nth-of-type(2):hover::before,
-.number-parents button:nth-of-type(2):hover::before {
-    background-position: -104px 0px;
+.number-child button:nth-of-type(2):hover::before,.number-parents button:nth-of-type(2):hover::before {
+    background-position: -104px 0
 }
 
-.number-child button:first-of-type:hover::before,
-.number-parents button:first-of-type:hover::before {
-    background-position: -3px -27px;
+.number-child button:first-of-type:hover::before,.number-parents button:first-of-type:hover::before {
+    background-position: -3px -27px
 }
 
-.number-child button:nth-of-type(2):active::before,
-.number-parents button:nth-of-type(2):active::before {
-    background-position: -22px -32px;
+.number-child button:nth-of-type(2):active::before,.number-parents button:nth-of-type(2):active::before {
+    background-position: -22px -32px
 }
 
 .form-col:last-child label {
     margin-left: 51px;
-    width: 40px;
+    width: 40px
 }
 
-.number-child button:first-of-type:active::before,
-.number-parents button:first-of-type:active::before {
-    background-position: -77px -27px;
+.number-child button:first-of-type:active::before,.number-parents button:first-of-type:active::before {
+    background-position: -77px -27px
 }
 
 .form-col label {
-    margin-top: 50px;
+    margin-top: 50px
 }
 
-form [type="submit"] {
+form [type=submit] {
     width: 458px;
     height: 58px;
-    background-color: #7FB1D0;
-    color: white;
+    background-color: #7fb1d0;
+    color: #fff;
     font-size: 21px;
     display: inline-block;
     vertical-align: top;
@@ -737,13 +698,13 @@ form [type="submit"] {
     border: none
 }
 
-form [type="submit"]:hover {
-    background-color: #669EC0;
+form [type=submit]:hover {
+    background-color: #669ec0
 }
 
-form [type="submit"]:active {
-    background-color: #5496BD;
-    color: #7EB0CD
+form [type=submit]:active {
+    background-color: #5496bd;
+    color: #7eb0cd
 }
 
 .main-form {
@@ -759,38 +720,38 @@ form [type="submit"]:active {
     box-shadow: none
 }
 
-.main-form input[type="checkbox"] {
-    display: none;
+.main-form input[type=checkbox] {
+    display: none
 }
 
 .main-form label {
     width: auto;
-    float: none;
+    color: #fff;
+    font-weight: 400
 }
 
-.main-form input {
+.main-form input,.main-form label {
     padding: 0;
     margin: 0;
-    float: none;
+    float: none
 }
 
-.main-form input[type="checkbox"] + label {
+.main-form input[type=checkbox]+label {
     display: block;
     float: none;
     line-height: 20px;
     position: relative;
     width: auto;
-    margin: 0;
-    margin-top: 26px;
+    margin: 26px 0 0;
     cursor: pointer;
-    padding-left: 40px;
+    padding-left: 40px
 }
 
-.main-form input[type="checkbox"] + label:first-of-type {
-    margin-top: 0px;
+.main-form input[type=checkbox]+label:first-of-type {
+    margin-top: 0
 }
 
-.main-form input[type="checkbox"] + label::before {
+.main-form input[type=checkbox]+label::before {
     content: "";
     display: block;
     width: 24px;
@@ -799,10 +760,10 @@ form [type="submit"]:active {
     background-position: -282px -2px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0
 }
 
-.main-form input[type="checkbox"]:checked + label::after {
+.main-form input[type=checkbox]:checked+label::after {
     content: "";
     display: block;
     width: 24px;
@@ -811,46 +772,34 @@ form [type="submit"]:active {
     background-position: -318px -3px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0
 }
 
-.main-form input[type="checkbox"]:checked:disabled + label::after {
-    opacity: 0.7
+.main-form input[type=checkbox]:checked:disabled+label::after,.main-form input[type=checkbox]:checked:disabled+label::before {
+    opacity: .7
 }
 
-.main-form input[type="checkbox"]:checked:disabled + label::before {
-    opacity: 0.7
+.filter-range p,legend {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700
 }
 
 legend {
-    color: white;
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: bold
+    margin-bottom: 5px
 }
 
 .filter-range p {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 0px;
+    margin-left: 0;
     text-align: left;
-    margin-top: 0;
-}
-
-.main-form label {
-    float: none;
-    margin: 0px 0px;
-    padding: 0;
-    color: white;
-    font-weight: normal;
+    margin-top: 0
 }
 
 .main-form fieldset {
     float: left;
     padding: 27px 0 30px 6%;
     margin-top: 25px;
-    border: none;
+    border: none
 }
 
 .main-form fieldset:last-of-type {
@@ -862,34 +811,33 @@ legend {
     text-align: center;
     margin-right: 0%;
     margin-top: 0;
-    padding-right: 6%;
+    padding-right: 6%
 }
 
 .main-form fieldset:nth-of-type(2) {
-    margin-left: 3.5%;
+    margin-left: 3.5%
 }
 
 .main-form fieldset:last-of-type input {
     width: 50%;
-    margin: 0;
-    margin-top: -1px;
+    margin: -1px 0 0;
     height: 38px;
     color: inherit;
     font: inherit;
-    background: none;
+    background: 0 0;
     border: none;
-    float: none;
+    float: none
 }
 
 .price-controls {
     height: 38px;
     position: relative;
     margin-bottom: 20px;
-    border: 2px solid #ffffff;
+    border: 2px solid #fff;
     border-radius: 3px;
     width: 100%;
     margin-top: 10px;
-    font-size: 0px;
+    font-size: 0
 }
 
 .price-controls::after {
@@ -899,8 +847,8 @@ legend {
     left: 50%;
     width: 2px;
     height: 22px;
-    background: #ffffff;
-    transform: translate(-50%, -50%);
+    background: #fff;
+    transform: translate(-50%,-50%)
 }
 
 .price-controls label {
@@ -908,36 +856,35 @@ legend {
     font-size: 14px;
     vertical-align: top;
     line-height: 38px;
-    margin-top: 0px;
+    margin-top: 0;
     float: none;
-    cursor: pointer;
+    cursor: pointer
 }
 
-.price-controls .min-price,
 .price-controls .max-price {
     width: 40%;
-    padding-left: 10%;
+    padding-left: 10%
 }
 
 .price-controls .min-price {
     width: 37%;
-    padding-left: 13%;
+    padding-left: 13%
 }
 
 .range-controls {
     position: relative;
-    margin-bottom: 32px;
+    margin-bottom: 32px
 }
 
 .range-controls .scale {
     height: 2px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255,255,255,.3)
 }
 
 .range-controls .bar {
     width: 80%;
     height: 2px;
-    background: #ffffff;
+    background: #fff
 }
 
 .range-toggle {
@@ -946,22 +893,22 @@ legend {
     width: 4px;
     height: 4px;
     background: #ababab;
-    border: 8px solid #ffffff;
+    border: 8px solid #fff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;
+    box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
+    cursor: pointer
 }
 
 .range-toggle:hover {
-    background: #1c4f80;
+    background: #1c4f80
 }
 
 .range-toggle-min {
-    left: 0;
+    left: 0
 }
 
 .range-toggle-max {
-    left: 80%;
+    left: 80%
 }
 
 .main-form button {
@@ -971,28 +918,28 @@ legend {
     margin-right: auto;
     display: block;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid #fff;
     border-radius: 3px;
     font-size: 14px;
     font-family: "PT Sans" sans-serif;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 .sort h2 {
     margin-top: 18px;
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
     float: left;
     clear: left
 }
 
 .main-form button:hover {
-    background-color: #ffffff;
-    color: black
+    background-color: #fff;
+    color: #000
 }
 
 .sort {
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid #e3e3e3;
     height: 67px;
     padding-left: 6%
 }
@@ -1003,36 +950,34 @@ legend {
     padding: 0;
     height: 17px;
     margin-top: 20px;
-    margin-left: 33px;
+    margin-left: 33px
 }
 
 .sort li:first-child a {
     border: none;
-    color: #7FB1D0;
+    color: #7fb1d0
 }
 
 .sort li a {
     padding: 0;
-    margin-top: 0px;
+    margin-top: 0;
     float: left;
     clear: left;
     line-height: 21px;
     text-decoration: none;
     font-size: 12px;
     color: #cacaca;
-    border-bottom: 1px dotted #81B3D2;
-    height: 18px;
+    border-bottom: 1px dotted #81b3d2;
+    height: 18px
 }
 
 .arrows {
     width: 30px;
     position: relative;
-    margin: 0;
     height: 10px;
     float: right;
-    margin-right: 73px;
-    margin-top: -50px;
-    background-color: transparent;
+    margin: -50px 73px 0 0;
+    background-color: transparent
 }
 
 .arrows span {
@@ -1060,25 +1005,24 @@ legend {
 
 .arrows span:last-of-type {
     left: -30px;
-    transform: rotate(180deg);
-    background-position: -385px -1px
+    transform: rotate(180deg)
 }
 
-.arrows span:last-of-type:active {
+.arrows span:last-of-type,.arrows span:last-of-type:active {
     background-position: -385px -1px
 }
 
 .sort li a:hover {
-    color: #81B3D2;
+    color: #81b3d2
 }
 
 .sort li a:active {
-    color: black;
+    color: #000;
     border: none
 }
 
 .sort li:first-child a {
-    margin-left: 0px;
+    margin-left: 0
 }
 
 .sort span {
@@ -1086,27 +1030,27 @@ legend {
     float: left;
     margin-top: 22px;
     font-size: 12px;
-    line-height: 21px;
+    line-height: 21px
 }
 
 .results-item {
     padding-left: 6%;
-    border-bottom: 1px solid #E3E3E3;
-    height: 118px;
+    border-bottom: 1px solid #e3e3e3;
+    height: 118px
 }
 
 .results-item .image {
     float: left;
-    margin-top: 0px;
+    margin-top: 0
 }
 
 .results-item .raiting {
     float: right;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     position: relative;
     padding: 5px 10px;
     margin-top: 58px;
-    margin-right: 73px;
+    margin-right: 73px
 }
 
 .stars {
@@ -1116,50 +1060,43 @@ legend {
     margin-right: -102px;
     background-image: url(../img/spritesheet.png);
     background-position: -280px -35px;
-    background-color: transparent;
+    background-color: transparent
 }
 
 .results-item:nth-child(2) .stars {
-    background-position: -233px -35px;
+    background-position: -233px -35px
 }
 
 .results-item:nth-child(3) .stars {
-    background-position: -256px -35px;
+    background-position: -256px -35px
 }
 
 .results-item .inf {
-    margin: 0;
     padding: 0;
-    margin-left: 166px;
     height: 100px;
-    margin-top: 35px;
+    margin: 35px 0 0 166px
 }
 
 .inf a h2 {
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
     float: left;
-    padding: 0;
-    margin: 0;
-    margin-top: -5px;
-    padding: 0;
+    margin: -5px 0 0;
+    padding: 0
 }
 
 .inf h2:hover {
-    color: #7FB1D0
+    color: #7fb1d0
 }
 
 .inf h2:active {
-    color: #CACACA
+    color: #cacaca
 }
 
 .inf span {
     display: inline-block;
     vertical-align: top;
-    margin-top: -68px
-}
-
-.inf span {
+    margin-top: -68px;
     float: left;
     clear: left
 }
@@ -1170,43 +1107,40 @@ legend {
 
 .inf a {
     float: left;
-    padding: 0;
-    margin: 0;
-    margin-top: -34px;
+    margin: -34px 0 0;
     text-decoration: none;
-    background-color: #7FB1D0;
-    color: white;
+    background-color: #7fb1d0;
+    color: #fff;
     padding: 4px 15px;
-    font-weight: bold
+    font-weight: 700
 }
 
 .inf a:first-of-type {
     padding: 0;
-    color: black;
-    background-color: white;
-    margin: 0;
+    color: #000;
+    background-color: #fff;
+    margin: 0
 }
 
 .inf a:last-of-type {
-    margin-left: 100px;
     background-color: #756256;
-    margin-left: 113px;
+    margin-left: 113px
 }
 
 .inf a:last-of-type:hover {
-    background-color: #604E43;
+    background-color: #604e43
 }
 
 .inf a:last-of-type:active {
-    background-color: #503E33;
-    color: rgba(133, 120, 113, 0.7);
+    background-color: #503e33;
+    color: rgba(133,120,113,.7)
 }
 
 .inf a:nth-of-type(2):hover {
-    background-color: #669EC0;
+    background-color: #669ec0
 }
 
 .inf a:nth-of-type(2):active {
-    background-color: #5496BD;
-    color: rgba(136, 182, 209, 0.7)
+    background-color: #5496bd;
+    color: rgba(136,182,209,.7)
 }
