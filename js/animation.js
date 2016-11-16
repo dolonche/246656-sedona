@@ -1,6 +1,5 @@
 var preform = document.querySelector(".form-title");
 var form = document.querySelector(".form-index");
-var hidden = document.querySelector(".form-index");
 var dateon = document.querySelector("[name=arrival]");
 var dateoff = document.querySelector("[name=departure]")
 preform.addEventListener("click", function (event) {
