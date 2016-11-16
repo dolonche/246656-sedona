@@ -188,8 +188,6 @@ nav li a:active {
     margin-top: 5px;
 }
 
-
-
 .description {
     display: inline-block;
     width: 33.333333%;
@@ -276,8 +274,8 @@ nav li a:active {
     font-size: 21px;
 }
 
-.advantages-item p{
-    margin-top: 20px;    
+.advantages-item p {
+    margin-top: 20px;
 }
 
 .footer-social .social-btn,
@@ -311,8 +309,8 @@ nav li a:active {
     margin-right: auto
 }
 
-.inner-cause-wrapper p{
- margin-top: 21px;    
+.inner-cause-wrapper p {
+    margin-top: 21px;
 }
 
 .inner-cause-wrapper h3 {
@@ -491,6 +489,10 @@ form {
 }
 
 .form-index {
+    z-index: 100
+}
+
+.form-close {
     z-index: -100
 }
 
@@ -752,7 +754,7 @@ form [type=submit] {
     margin-bottom: 55px;
     margin-right: 55px;
     border: none;
-    margin-top:49px;
+    margin-top: 49px;
 }
 
 form [type=submit]:hover {

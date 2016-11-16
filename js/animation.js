@@ -3,6 +3,7 @@ var form = document.querySelector(".form-index");
 var dateon = document.querySelector("[name=arrival]");
 var dateoff = document.querySelector("[name=departure]");
 var link = document.querySelector(".searching");
+form.classList.add("form-close");
 link.addEventListener("click", function (event) {
      event.preventDefault(); 
 });
